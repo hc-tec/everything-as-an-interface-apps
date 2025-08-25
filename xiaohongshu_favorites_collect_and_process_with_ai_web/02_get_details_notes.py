@@ -23,8 +23,8 @@ def init_file():
 init_file()
 
 async def get_details(client, brief_notes_results):
-    if not brief_notes_results["success"]:
-        print(f"[get_favorite_notes_brief_from_xhs]执行失败：{brief_notes_results['error']}")
+    if brief_notes_results.get("count", -1) <= 0:
+        print(f"brief_notes_results无数据，也可能出错：{brief_notes_results.get('error', None)}")
         return
 
     # 只需要对增量笔记获取详情
