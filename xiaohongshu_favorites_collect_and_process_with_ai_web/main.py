@@ -80,7 +80,7 @@ async def main():
             print(f"[get_favorite_notes_brief_from_xhs]执行失败：{brief_notes_res['error']}")
             return
 
-        print(f"[get_favorite_notes_brief_from_xhs]执行成功，耗时：{brief_notes_res.get("exec_elapsed_ms", "null")}ms")
+        print(f"[get_favorite_notes_brief_from_xhs]执行成功，耗时：{brief_notes_res.get('exec_elapsed_ms', 'null')}ms")
 
         # 全量笔记保存到本地
         with open(favorite_notes_brief_storage_file, "w", encoding="utf-8") as f:
@@ -111,7 +111,7 @@ async def main():
             print(f"[get_notes_details_from_xhs]执行失败：{details_notes_res['error']}")
             return
 
-        print(f"[get_notes_details_from_xhs]执行成功，耗时：{details_notes_res.get("exec_elapsed_ms", "null")}ms")
+        print(f"[get_notes_details_from_xhs]执行成功，耗时：{details_notes_res.get('exec_elapsed_ms', 'null')}ms")
 
         # 获取到现有的笔记详情数据
         with open(favorite_notes_details_storage_file, "r", encoding="utf-8") as f:
