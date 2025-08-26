@@ -5,352 +5,352 @@
         "max_new_items": 10,
         "max_seconds": 1000000000
     },
-    "exec_elapsed_ms": 7895,
+    "exec_elapsed_ms": 7938,
     "success": true,
     "data": [
         {
-            "id": "68aa59b9000000001d016aea",
-            "xsec_token": "ABwsoKQugskzypYT5hqU9PbRlr0YHJvPIyhMCS9Tw_8IA=",
-            "title": "马翔宇🧠脑子秀逗了，进啥体制内?😭",
+            "id": "68a9cd35000000001d01a5dc",
+            "xsec_token": "AB6He_nhr3SW_Ki0NUrzAxN2YAZCBdYItBnoHpAxaDts0=",
+            "title": "11种性格陷阱全解析",
             "author_info": {
-                "user_id": "600d658500000000010007c0",
-                "username": "创业实战营销陈轩",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31b63q93omo6g5o0dcm2g81u0svctf78?imageView2/2/w/120/format/jpg",
-                "xsec_token": "AB4fchfBaBAzCF1RLgqxuqxc1bwya-L07pk9qEfYWBXCU="
+                "user_id": "614e928200000000020218e3",
+                "username": "苏苏Sue",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31kn6ofm1j26g5oaeia10k673plggku8?imageView2/2/w/120/format/jpg",
+                "xsec_token": "ABHPpOC8h6k1WSJQaxDFc95M4i50AFlHf6WRoPfA9Mlic="
             },
             "statistic": {
-                "like_num": "219",
+                "like_num": "1019",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/abd43c565020d24474a04297ea5aa181/notes_pre_post/1040g3k031li133nd4q505o0dcm2g81u061mk718!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/1f53dc427386dd4f81d799ae05e3dbe2/spectrum/1040g0k031lhhlros4q005oaeia10k6737eqsmhg!nc_n_webp_mw_1"
         },
         {
-            "id": "68a9649d000000001d037e57",
-            "xsec_token": "AB6He_nhr3SW_Ki0NUrzAxN65jT8bZniFtUfwdddFMAMI=",
-            "title": "先被白嫖，后被投诉，有点意思啊",
+            "id": "68ac5c3d000000001c034615",
+            "xsec_token": "ABtml56omBb7gL7a9gVJS2B-5Or8_aTv2ZKCRrAmMeAk8=",
+            "title": "阿里开源一款专用于开发金融应用的工具：通义点金，可以用它构建研报摘要App、或能",
             "author_info": {
-                "user_id": "6666707e00000000070066b0",
-                "username": "阿杆",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3184d699u466g5pj6e1v1oplg9ehg1m8?imageView2/2/w/120/format/jpg",
-                "xsec_token": "ABBsmxAaIRTFUjWNIE-MuCbq5cBFjW6Yil5luxTzy7uuw="
+                "user_id": "57ff07f55e87e72e7114f1da",
+                "username": "AI产品少女贝",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31bqggnn6gm0048p2rn3vbseqdkgerr8?imageView2/2/w/120/format/jpg",
+                "xsec_token": "ABykR7W9-xV4_dpWeDFhDQd-vHbPEx2FhwJmYRkorgEvY="
             },
             "statistic": {
-                "like_num": "35",
+                "like_num": "8",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/227190be981caf45c6c2739bcd4f452e/spectrum/1040g0k031lh3isjr4u005pj6e1v1oplgvn51ng8!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/a66db2e39cc9d9f714939c85241c2900/spectrum/1040g34o31lk088enl01048p2rn3vbseqlj05e0o!nc_n_webp_mw_1"
         },
         {
-            "id": "68a574b4000000001c00a8fe",
-            "xsec_token": "ABXcR8I9Y9Jj6oOIdUCnzjfM05IW2eBTcI_aJBHPGlZfI=",
-            "title": "河床悟道",
+            "id": "68871491000000001203e3ab",
+            "xsec_token": "ABKCYhUFctoGdouw2zbl1odRXS2SegYVwxbHBTMUGfWFo=",
+            "title": "全班都在用我的docx｜我的学习进化论",
             "author_info": {
-                "user_id": "60d9a161000000000100bda9",
-                "username": "墨初",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318qanpc4k46g5o6pk5gg9fd9cq2i6p0?imageView2/2/w/120/format/jpg",
-                "xsec_token": "ABED3RQxngK2LwKXQpqfs9xcDWUYCfml6Q2tPEEnwfUng="
+                "user_id": "589850c950c4b40862f652b4",
+                "username": "希望之芒",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/589850c950c4b40862f652b4.jpg?imageView2/2/w/120/format/jpg",
+                "xsec_token": "ABCrQxlNAeOfg7_0qxmYq2RK3aLtjr0PwtpfRqkL9iJn4="
             },
             "statistic": {
-                "like_num": "347",
+                "like_num": "1851",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/a6b2081848508cc4a2605a06a244470f/notes_pre_post/1040g3k831ld8ng0k5id05o6pk5gg9fd973r5nlg!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/cc55e02e1219cd52c0f7cbba6c6ec2ec/1040g00831ki24h012o00493r4f8ciklk60n8aho!nc_n_webp_mw_1"
         },
         {
-            "id": "68a2d1e1000000001d02b256",
-            "xsec_token": "ABMlDNcmrsiIW8FX28GMM0iyQHuac_Ggbvn5EzKYjRQiM=",
-            "title": "把长内容装进口袋，10分钟抓住1小时要点",
+            "id": "68abfe4c000000001d00593a",
+            "xsec_token": "AB9kzxzqTrrlAJEceOlObRjwe0Day1AuryEO0UdQnmTTE=",
+            "title": "Deep Research 初创扶持计划开启申请",
             "author_info": {
-                "user_id": "5d0a48fd00000000160374bd",
-                "username": "被减数",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31etps2qgmo005n8a93ulmt5t4n6bd00?imageView2/2/w/120/format/jpg",
-                "xsec_token": "ABjlq-oSh-RSABIjlQdgo2EYR__1XK9EYINzF6nFuchWg="
+                "user_id": "66140bca000000001700fbb8",
+                "username": "Ava的硅谷新视界",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/645b7e78731e07eb8ca3d81b.jpg?imageView2/2/w/120/format/jpg",
+                "xsec_token": "AB1ESs7iYAQx7qF9XofspfULa5nsSzY_v4UEK90XqxVBc="
             },
             "statistic": {
-                "like_num": "59",
+                "like_num": "20",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/4e14b39105a1c90ebe5c38875f7e044a/1040g00831lambairlo105n8a93ulmt5tlgij4jo!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/20d33f65d783b646dc088260a9c37d60/spectrum/1040g34o31ljkqgl7ku105pgk1f55putol6s06r0!nc_n_webp_mw_1"
         },
         {
-            "id": "68a86140000000001c00bb49",
-            "xsec_token": "ABGzJV4EcQwmf3fMN3NaIiTQxUCv_2flS6nqtfunSqqJU=",
-            "title": "📱分享一些FindMyUsers的开发经验和工具",
+            "id": "68abc26e000000001c0116d5",
+            "xsec_token": "AB9kzxzqTrrlAJEceOlObRjxEi2k1Xz4Kk6xgeTWb_lGI=",
+            "title": "⚠️警告！独立开发别着急开公司了",
             "author_info": {
-                "user_id": "662cf72e0000000003032c9f",
-                "username": "金.奇",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31gglq8m8jo605phcusn0ub4vi9dl32g?imageView2/2/w/120/format/jpg",
-                "xsec_token": "ABt9NtkgrXA4n2D-YV2GTmN3TKcD_uCjyQxBXLimZuh_o="
+                "user_id": "661b14c300000000070054b2",
+                "username": "独立开发星仔",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hmi01q93i605pgr2j1hol5ikjssgs0?imageView2/2/w/120/format/jpg",
+                "xsec_token": "AByf7rUJbybjWsX7XuPd8GTv5kX3l8ItPBaIIcqQt27zw="
             },
             "statistic": {
-                "like_num": "182",
+                "like_num": "116",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/b5f47f59faa52ee965138d6723c20918/spectrum/1040g0k031lg3n9jl52205phcusn0ub4v31j3dag!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/47df8b0354f21aa145d55e882e2c3a3a/1040g2sg31ljcuum65okg5pgr2j1hol5ioa1agfo!nc_n_webp_mw_1"
         },
         {
-            "id": "687b3baf0000000017035a4c",
-            "xsec_token": "ABKPz3ejGa_7mR6q9gckMxakAGanOSHn-n8_95ojwoS70=",
-            "title": "今年火爆的上下文工程原来Manus是这么做的",
+            "id": "68a5a080000000001d01f759",
+            "xsec_token": "ABXcR8I9Y9Jj6oOIdUCnzjfEm-ttPpHydrwEdEYqTQKd8=",
+            "title": "高质量的 shadcn 组件库集合",
             "author_info": {
-                "user_id": "64cdc8b0000000000b006bff",
-                "username": "AI Agent新手村（WayToAGI）",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31fo438f17q005p6dp2o2oqvvsbafo9g?imageView2/2/w/120/format/jpg",
-                "xsec_token": "ABV_a55TYauIRnicmitZZuhS5zBAAbrrhZTU33iWGjsiA="
+                "user_id": "6076c9a2000000000101e862",
+                "username": "Zen",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30vu24vlj660g5o3mp6h0bq32dq6ja08?imageView2/2/w/120/format/jpg",
+                "xsec_token": "ABaO7nlRIQAesNft_ej3b0ATlcbtU1_CNopnL1mXSqCbA="
             },
             "statistic": {
-                "like_num": "10",
+                "like_num": "62",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/777e9f5d47a45f43f33d29192c7e5baa/1040g2sg31k418u83j4e05p6dp2o2oqvv2j3v37g!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/bccd1cefbd7bf4a470f1bdb152a122bb/notes_pre_post/1040g3k831lde1ilglecg5o3mp6h0bq32bk1e4vo!nc_n_webp_mw_1"
         },
         {
-            "id": "68a70285000000001d0377e4",
-            "xsec_token": "ABGg4La_699IBV7cDbv7M9aOE8nMKPgFJgLMqDVr9PHXs=",
-            "title": "天涯论坛关闭后，大家都在逛什么？",
+            "id": "68aa668f000000001d0290ed",
+            "xsec_token": "ABwsoKQugskzypYT5hqU9PbcORqHRwYq-1Xv64VX10yQM=",
+            "title": "尽早完成原始资本积累（邪修版）",
             "author_info": {
-                "user_id": "68247b45000000000e012bc6",
-                "username": "17 岁网球太菜想玩 AI",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31kq84upnj0705q14fd2jiau6h6g30g0?imageView2/2/w/120/format/jpg",
-                "xsec_token": "AB5GZtR_J-g5Bg9Q2YA31NsBT3iJolJYR6wgjFmZcmPmM="
+                "user_id": "65e449c70000000005009686",
+                "username": "凌晨之狼",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ivv1poph40g5pfo83fhhq5tkn7rnro?imageView2/2/w/120/format/jpg",
+                "xsec_token": "ABku13nqRbqk7iZOFUkpeqr4nHIiOMu7mBO6HPMrpxbBI="
             },
             "statistic": {
-                "like_num": "366",
+                "like_num": "942",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/59e9f884759fec8497b9247e0b555843/1040g2sg31lep1n8elie05q14fd2jiau68p5r6mg!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/c92189e10c0420a8280c8a2d54ba6dce/1040g2sg31li376s9lof05pf4973h95k68g35qa8!nc_n_webp_mw_1"
         },
         {
-            "id": "6899c5770000000022023df6",
-            "xsec_token": "ABCJbOg-Q2MqweCaTeD27rEJ_FhKRQ_anH5gN_rMrAqbE=",
-            "title": "AI Agent 都有记忆？你可能被骗了",
+            "id": "685368a1000000000b01f0a1",
+            "xsec_token": "ABm1FDIwJn2Ovz3P5Xt6yymao2WEoTWPHtuNZ0Bs8QWq0=",
+            "title": "外网疯传的landing page设计",
             "author_info": {
-                "user_id": "6726d28b000000001c01b8a8",
-                "username": "凡人小北",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hqhqtpr3a6g5pp6qa5n3e58pgve7t0?imageView2/2/w/120/format/jpg",
-                "xsec_token": "ABt1l1V6MZ70Aj_T77RvpFXa_IT2teqMAZn1LMMf60KI4="
+                "user_id": "5e218ebf000000000100b932",
+                "username": "Rocket.X",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hcj68j33q0g5noism8081p6ls7ijt8?imageView2/2/w/120/format/jpg",
+                "xsec_token": "ABcnqOEcMTApKAnVPXpSvyGeYNK_nylKyEtnD-bqrmfqM="
             },
             "statistic": {
-                "like_num": "85",
+                "like_num": "2133",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/3835c4d14c6eeefd4130b0a4583295df/spectrum/1040g34o31l1rfk37ia6g5pp6qa5n3e58vc75an0!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/334544d7cab9bb77609a88019a35d536/1040g2sg31ji0i8gr36cg5nh1hqvg9e9itpsl190!nc_n_webp_mw_1"
         },
         {
-            "id": "68a2de0b000000001b022dd8",
-            "xsec_token": "ABMlDNcmrsiIW8FX28GMM0i7CJIrABejiV4pDJKMuBr9U=",
-            "title": "学了爬虫啥都不能爬，浑身难受ing[哭惹R][哭惹R][哭惹R]#爬虫 #pyt",
+            "id": "6859a200000000001c03229b",
+            "xsec_token": "ABViypVCqAXmtW8DiLspzkJk9lhkeOGjuM8A_DfU_14ps=",
+            "title": "找到了shadcnUI 很丑的原因",
             "author_info": {
-                "user_id": "670e0422000000001d0324de",
-                "username": "Zzzz",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31l7033p3lm005poe0gh7e96u4sp0p3g?imageView2/2/w/120/format/jpg",
-                "xsec_token": "ABPEm1zHS0PJIL4PIMAm2_ej6QTQJQbRsK6MnRW5Fgwow="
+                "user_id": "60c31808000000000100390a",
+                "username": "王乔治",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31abi03vrnc005o6330408e8a0ols8tg?imageView2/2/w/120/format/jpg",
+                "xsec_token": "ABA1l_ArbXPNqbxJZ1uxWD1r2163Dpvdan9I_B_ubbnRU="
             },
             "statistic": {
-                "like_num": "1170",
+                "like_num": "199",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/b066b113460435ccf242448b03401052/1040g2sg31lanqb3h5ie05poe0gh7e96uujtul38!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/ea364dc78495335aef577a54b9dd41fb/notes_pre_post/1040g3k831j359qhjh4gg5o6330408e8a0gmogk0!nc_n_webp_mw_1"
         },
         {
-            "id": "68a3e578000000001c00c625",
-            "xsec_token": "ABNeAd5jydPdBV1HsFfWLd44i4hzmBC_twB1Ig-xp-hns=",
-            "title": "权谋剧对普通人的意义是什么？",
+            "id": "68a9c61b000000001c0075d7",
+            "xsec_token": "AB6He_nhr3SW_Ki0NUrzAxN9Q6OJkQsWVZuOQ_xNSBt00=",
+            "title": "Cursor和Trae对不起再见",
             "author_info": {
-                "user_id": "55d6d68aa75c9544daac8157",
-                "username": "红炉点雪",
-                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ciavujl0u6g414c7qb8l0ansmeah40?imageView2/2/w/120/format/jpg",
-                "xsec_token": "AB2EyvK-0qTcc6gR7Oajn94441F6Lfi9e9W1n02jbamww="
+                "user_id": "5acca14ce8ac2b11f0563c8c",
+                "username": "蝴蝶小妖同学",
+                "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31lir5dfglm6g4a4e36gkof4c723url0?imageView2/2/w/120/format/jpg",
+                "xsec_token": "AB6Rm_yKPgwcV2r1slJWg3VVuc1_zTTDPoY52BowD-Jn4="
             },
             "statistic": {
-                "like_num": "270",
+                "like_num": "112",
                 "collect_num": null,
                 "chat_num": null
             },
-            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/46f8d44eae3fb3d6f27f1a92a41f57c8/notes_pre_post/1040g3k831lbo05njlodg414c7qb8l0an7j6cgpo!nc_n_webp_mw_1"
+            "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/a0f6f00563a5a7db55bd1843c45042e2/1040g2sg31lhfk4bl5ekg4a4e36gkof4cbr5tss0!nc_n_webp_mw_1"
         }
     ],
     "count": 10,
     "added": {
         "data": [
             {
-                "id": "68aa59b9000000001d016aea",
-                "xsec_token": "ABwsoKQugskzypYT5hqU9PbRlr0YHJvPIyhMCS9Tw_8IA=",
-                "title": "马翔宇🧠脑子秀逗了，进啥体制内?😭",
+                "id": "68a9cd35000000001d01a5dc",
+                "xsec_token": "AB6He_nhr3SW_Ki0NUrzAxN2YAZCBdYItBnoHpAxaDts0=",
+                "title": "11种性格陷阱全解析",
                 "author_info": {
-                    "user_id": "600d658500000000010007c0",
-                    "username": "创业实战营销陈轩",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31b63q93omo6g5o0dcm2g81u0svctf78?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "AB4fchfBaBAzCF1RLgqxuqxc1bwya-L07pk9qEfYWBXCU="
+                    "user_id": "614e928200000000020218e3",
+                    "username": "苏苏Sue",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31kn6ofm1j26g5oaeia10k673plggku8?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "ABHPpOC8h6k1WSJQaxDFc95M4i50AFlHf6WRoPfA9Mlic="
                 },
                 "statistic": {
-                    "like_num": "219",
+                    "like_num": "1019",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/abd43c565020d24474a04297ea5aa181/notes_pre_post/1040g3k031li133nd4q505o0dcm2g81u061mk718!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/1f53dc427386dd4f81d799ae05e3dbe2/spectrum/1040g0k031lhhlros4q005oaeia10k6737eqsmhg!nc_n_webp_mw_1"
             },
             {
-                "id": "68a9649d000000001d037e57",
-                "xsec_token": "AB6He_nhr3SW_Ki0NUrzAxN65jT8bZniFtUfwdddFMAMI=",
-                "title": "先被白嫖，后被投诉，有点意思啊",
+                "id": "68ac5c3d000000001c034615",
+                "xsec_token": "ABtml56omBb7gL7a9gVJS2B-5Or8_aTv2ZKCRrAmMeAk8=",
+                "title": "阿里开源一款专用于开发金融应用的工具：通义点金，可以用它构建研报摘要App、或能",
                 "author_info": {
-                    "user_id": "6666707e00000000070066b0",
-                    "username": "阿杆",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3184d699u466g5pj6e1v1oplg9ehg1m8?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "ABBsmxAaIRTFUjWNIE-MuCbq5cBFjW6Yil5luxTzy7uuw="
+                    "user_id": "57ff07f55e87e72e7114f1da",
+                    "username": "AI产品少女贝",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31bqggnn6gm0048p2rn3vbseqdkgerr8?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "ABykR7W9-xV4_dpWeDFhDQd-vHbPEx2FhwJmYRkorgEvY="
                 },
                 "statistic": {
-                    "like_num": "35",
+                    "like_num": "8",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/227190be981caf45c6c2739bcd4f452e/spectrum/1040g0k031lh3isjr4u005pj6e1v1oplgvn51ng8!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/a66db2e39cc9d9f714939c85241c2900/spectrum/1040g34o31lk088enl01048p2rn3vbseqlj05e0o!nc_n_webp_mw_1"
             },
             {
-                "id": "68a574b4000000001c00a8fe",
-                "xsec_token": "ABXcR8I9Y9Jj6oOIdUCnzjfM05IW2eBTcI_aJBHPGlZfI=",
-                "title": "河床悟道",
+                "id": "68871491000000001203e3ab",
+                "xsec_token": "ABKCYhUFctoGdouw2zbl1odRXS2SegYVwxbHBTMUGfWFo=",
+                "title": "全班都在用我的docx｜我的学习进化论",
                 "author_info": {
-                    "user_id": "60d9a161000000000100bda9",
-                    "username": "墨初",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318qanpc4k46g5o6pk5gg9fd9cq2i6p0?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "ABED3RQxngK2LwKXQpqfs9xcDWUYCfml6Q2tPEEnwfUng="
+                    "user_id": "589850c950c4b40862f652b4",
+                    "username": "希望之芒",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/589850c950c4b40862f652b4.jpg?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "ABCrQxlNAeOfg7_0qxmYq2RK3aLtjr0PwtpfRqkL9iJn4="
                 },
                 "statistic": {
-                    "like_num": "347",
+                    "like_num": "1851",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/a6b2081848508cc4a2605a06a244470f/notes_pre_post/1040g3k831ld8ng0k5id05o6pk5gg9fd973r5nlg!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/cc55e02e1219cd52c0f7cbba6c6ec2ec/1040g00831ki24h012o00493r4f8ciklk60n8aho!nc_n_webp_mw_1"
             },
             {
-                "id": "68a2d1e1000000001d02b256",
-                "xsec_token": "ABMlDNcmrsiIW8FX28GMM0iyQHuac_Ggbvn5EzKYjRQiM=",
-                "title": "把长内容装进口袋，10分钟抓住1小时要点",
+                "id": "68abfe4c000000001d00593a",
+                "xsec_token": "AB9kzxzqTrrlAJEceOlObRjwe0Day1AuryEO0UdQnmTTE=",
+                "title": "Deep Research 初创扶持计划开启申请",
                 "author_info": {
-                    "user_id": "5d0a48fd00000000160374bd",
-                    "username": "被减数",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31etps2qgmo005n8a93ulmt5t4n6bd00?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "ABjlq-oSh-RSABIjlQdgo2EYR__1XK9EYINzF6nFuchWg="
+                    "user_id": "66140bca000000001700fbb8",
+                    "username": "Ava的硅谷新视界",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/645b7e78731e07eb8ca3d81b.jpg?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "AB1ESs7iYAQx7qF9XofspfULa5nsSzY_v4UEK90XqxVBc="
                 },
                 "statistic": {
-                    "like_num": "59",
+                    "like_num": "20",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/4e14b39105a1c90ebe5c38875f7e044a/1040g00831lambairlo105n8a93ulmt5tlgij4jo!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/20d33f65d783b646dc088260a9c37d60/spectrum/1040g34o31ljkqgl7ku105pgk1f55putol6s06r0!nc_n_webp_mw_1"
             },
             {
-                "id": "68a86140000000001c00bb49",
-                "xsec_token": "ABGzJV4EcQwmf3fMN3NaIiTQxUCv_2flS6nqtfunSqqJU=",
-                "title": "📱分享一些FindMyUsers的开发经验和工具",
+                "id": "68abc26e000000001c0116d5",
+                "xsec_token": "AB9kzxzqTrrlAJEceOlObRjxEi2k1Xz4Kk6xgeTWb_lGI=",
+                "title": "⚠️警告！独立开发别着急开公司了",
                 "author_info": {
-                    "user_id": "662cf72e0000000003032c9f",
-                    "username": "金.奇",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31gglq8m8jo605phcusn0ub4vi9dl32g?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "ABt9NtkgrXA4n2D-YV2GTmN3TKcD_uCjyQxBXLimZuh_o="
+                    "user_id": "661b14c300000000070054b2",
+                    "username": "独立开发星仔",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hmi01q93i605pgr2j1hol5ikjssgs0?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "AByf7rUJbybjWsX7XuPd8GTv5kX3l8ItPBaIIcqQt27zw="
                 },
                 "statistic": {
-                    "like_num": "182",
+                    "like_num": "116",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/b5f47f59faa52ee965138d6723c20918/spectrum/1040g0k031lg3n9jl52205phcusn0ub4v31j3dag!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/47df8b0354f21aa145d55e882e2c3a3a/1040g2sg31ljcuum65okg5pgr2j1hol5ioa1agfo!nc_n_webp_mw_1"
             },
             {
-                "id": "687b3baf0000000017035a4c",
-                "xsec_token": "ABKPz3ejGa_7mR6q9gckMxakAGanOSHn-n8_95ojwoS70=",
-                "title": "今年火爆的上下文工程原来Manus是这么做的",
+                "id": "68a5a080000000001d01f759",
+                "xsec_token": "ABXcR8I9Y9Jj6oOIdUCnzjfEm-ttPpHydrwEdEYqTQKd8=",
+                "title": "高质量的 shadcn 组件库集合",
                 "author_info": {
-                    "user_id": "64cdc8b0000000000b006bff",
-                    "username": "AI Agent新手村（WayToAGI）",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31fo438f17q005p6dp2o2oqvvsbafo9g?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "ABV_a55TYauIRnicmitZZuhS5zBAAbrrhZTU33iWGjsiA="
+                    "user_id": "6076c9a2000000000101e862",
+                    "username": "Zen",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30vu24vlj660g5o3mp6h0bq32dq6ja08?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "ABaO7nlRIQAesNft_ej3b0ATlcbtU1_CNopnL1mXSqCbA="
                 },
                 "statistic": {
-                    "like_num": "10",
+                    "like_num": "62",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/777e9f5d47a45f43f33d29192c7e5baa/1040g2sg31k418u83j4e05p6dp2o2oqvv2j3v37g!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/bccd1cefbd7bf4a470f1bdb152a122bb/notes_pre_post/1040g3k831lde1ilglecg5o3mp6h0bq32bk1e4vo!nc_n_webp_mw_1"
             },
             {
-                "id": "68a70285000000001d0377e4",
-                "xsec_token": "ABGg4La_699IBV7cDbv7M9aOE8nMKPgFJgLMqDVr9PHXs=",
-                "title": "天涯论坛关闭后，大家都在逛什么？",
+                "id": "68aa668f000000001d0290ed",
+                "xsec_token": "ABwsoKQugskzypYT5hqU9PbcORqHRwYq-1Xv64VX10yQM=",
+                "title": "尽早完成原始资本积累（邪修版）",
                 "author_info": {
-                    "user_id": "68247b45000000000e012bc6",
-                    "username": "17 岁网球太菜想玩 AI",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31kq84upnj0705q14fd2jiau6h6g30g0?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "AB5GZtR_J-g5Bg9Q2YA31NsBT3iJolJYR6wgjFmZcmPmM="
+                    "user_id": "65e449c70000000005009686",
+                    "username": "凌晨之狼",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ivv1poph40g5pfo83fhhq5tkn7rnro?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "ABku13nqRbqk7iZOFUkpeqr4nHIiOMu7mBO6HPMrpxbBI="
                 },
                 "statistic": {
-                    "like_num": "366",
+                    "like_num": "942",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/59e9f884759fec8497b9247e0b555843/1040g2sg31lep1n8elie05q14fd2jiau68p5r6mg!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/c92189e10c0420a8280c8a2d54ba6dce/1040g2sg31li376s9lof05pf4973h95k68g35qa8!nc_n_webp_mw_1"
             },
             {
-                "id": "6899c5770000000022023df6",
-                "xsec_token": "ABCJbOg-Q2MqweCaTeD27rEJ_FhKRQ_anH5gN_rMrAqbE=",
-                "title": "AI Agent 都有记忆？你可能被骗了",
+                "id": "685368a1000000000b01f0a1",
+                "xsec_token": "ABm1FDIwJn2Ovz3P5Xt6yymao2WEoTWPHtuNZ0Bs8QWq0=",
+                "title": "外网疯传的landing page设计",
                 "author_info": {
-                    "user_id": "6726d28b000000001c01b8a8",
-                    "username": "凡人小北",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hqhqtpr3a6g5pp6qa5n3e58pgve7t0?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "ABt1l1V6MZ70Aj_T77RvpFXa_IT2teqMAZn1LMMf60KI4="
+                    "user_id": "5e218ebf000000000100b932",
+                    "username": "Rocket.X",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hcj68j33q0g5noism8081p6ls7ijt8?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "ABcnqOEcMTApKAnVPXpSvyGeYNK_nylKyEtnD-bqrmfqM="
                 },
                 "statistic": {
-                    "like_num": "85",
+                    "like_num": "2133",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/3835c4d14c6eeefd4130b0a4583295df/spectrum/1040g34o31l1rfk37ia6g5pp6qa5n3e58vc75an0!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/334544d7cab9bb77609a88019a35d536/1040g2sg31ji0i8gr36cg5nh1hqvg9e9itpsl190!nc_n_webp_mw_1"
             },
             {
-                "id": "68a2de0b000000001b022dd8",
-                "xsec_token": "ABMlDNcmrsiIW8FX28GMM0i7CJIrABejiV4pDJKMuBr9U=",
-                "title": "学了爬虫啥都不能爬，浑身难受ing[哭惹R][哭惹R][哭惹R]#爬虫 #pyt",
+                "id": "6859a200000000001c03229b",
+                "xsec_token": "ABViypVCqAXmtW8DiLspzkJk9lhkeOGjuM8A_DfU_14ps=",
+                "title": "找到了shadcnUI 很丑的原因",
                 "author_info": {
-                    "user_id": "670e0422000000001d0324de",
-                    "username": "Zzzz",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31l7033p3lm005poe0gh7e96u4sp0p3g?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "ABPEm1zHS0PJIL4PIMAm2_ej6QTQJQbRsK6MnRW5Fgwow="
+                    "user_id": "60c31808000000000100390a",
+                    "username": "王乔治",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31abi03vrnc005o6330408e8a0ols8tg?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "ABA1l_ArbXPNqbxJZ1uxWD1r2163Dpvdan9I_B_ubbnRU="
                 },
                 "statistic": {
-                    "like_num": "1170",
+                    "like_num": "199",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/b066b113460435ccf242448b03401052/1040g2sg31lanqb3h5ie05poe0gh7e96uujtul38!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/ea364dc78495335aef577a54b9dd41fb/notes_pre_post/1040g3k831j359qhjh4gg5o6330408e8a0gmogk0!nc_n_webp_mw_1"
             },
             {
-                "id": "68a3e578000000001c00c625",
-                "xsec_token": "ABNeAd5jydPdBV1HsFfWLd44i4hzmBC_twB1Ig-xp-hns=",
-                "title": "权谋剧对普通人的意义是什么？",
+                "id": "68a9c61b000000001c0075d7",
+                "xsec_token": "AB6He_nhr3SW_Ki0NUrzAxN9Q6OJkQsWVZuOQ_xNSBt00=",
+                "title": "Cursor和Trae对不起再见",
                 "author_info": {
-                    "user_id": "55d6d68aa75c9544daac8157",
-                    "username": "红炉点雪",
-                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ciavujl0u6g414c7qb8l0ansmeah40?imageView2/2/w/120/format/jpg",
-                    "xsec_token": "AB2EyvK-0qTcc6gR7Oajn94441F6Lfi9e9W1n02jbamww="
+                    "user_id": "5acca14ce8ac2b11f0563c8c",
+                    "username": "蝴蝶小妖同学",
+                    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31lir5dfglm6g4a4e36gkof4c723url0?imageView2/2/w/120/format/jpg",
+                    "xsec_token": "AB6Rm_yKPgwcV2r1slJWg3VVuc1_zTTDPoY52BowD-Jn4="
                 },
                 "statistic": {
-                    "like_num": "270",
+                    "like_num": "112",
                     "collect_num": null,
                     "chat_num": null
                 },
-                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508241652/46f8d44eae3fb3d6f27f1a92a41f57c8/notes_pre_post/1040g3k831lbo05njlodg414c7qb8l0an7j6cgpo!nc_n_webp_mw_1"
+                "cover_image": "http://sns-webpic-qc.xhscdn.com/202508260043/a0f6f00563a5a7db55bd1843c45042e2/1040g2sg31lhfk4bl5ekg4a4e36gkof4cbr5tss0!nc_n_webp_mw_1"
             }
         ],
         "count": 10
@@ -361,5 +361,5 @@
     },
     "plugin_id": "xiaohongshu_favorites_brief",
     "version": "2.0.0",
-    "task_id": "2d0374ab-7a46-429c-95bc-8e1f378493b4"
+    "task_id": "8bc2440e-f8db-44ab-a360-5a5684509b2d"
 }

@@ -4,7 +4,10 @@
     "tasks": [
         "summary",
         "keywords",
-        "topics"
+        "topics",
+        "entities_concepts",
+        "takeaways",
+        "steps"
     ],
     "count": 9,
     "data": [
@@ -14,14 +17,16 @@
                 "summary": {
                     "ok": true,
                     "result": {
-                        "summary_200": "文章系统解析了11种常见性格陷阱（如遗弃陷阱、情感剥夺、自卑陷阱、苛刻标准等），详细阐述其形成原因（多与原生家庭相关）、具体表现案例及逐步修复方法。核心观点指出这些心理模式并非个人过错，但改变是自我责任，旨在通过心理学知识促进自我认知与成长疗愈。",
-                        "confidence": 0.95
+                        "version": "1.0",
+                        "summary_200": "解析11种常见性格陷阱（如遗弃恐惧、情感剥夺、自卑感、苛刻标准等），揭示其形成原因（多与原生家庭相关）、具体表现及负面影响，并提供修补方法与自我成长方向，强调通过心理学知识实现自我疗愈。",
+                        "confidence": 0.9
                     },
-                    "raw": "{\"summary_200\": \"文章系统解析了11种常见性格陷阱（如遗弃陷阱、情感剥夺、自卑陷阱、苛刻标准等），详细阐述其形成原因（多与原生家庭相关）、具体表现案例及逐步修复方法。核心观点指出这些心理模式并非个人过错，但改变是自我责任，旨在通过心理学知识促进自我认知与成长疗愈。\", \"confidence\": 0.95}"
+                    "raw": "{\"version\":\"1.0\",\"summary_200\":\"解析11种常见性格陷阱（如遗弃恐惧、情感剥夺、自卑感、苛刻标准等），揭示其形成原因（多与原生家庭相关）、具体表现及负面影响，并提供修补方法与自我成长方向，强调通过心理学知识实现自我疗愈。\", \"confidence\":0.9}"
                 },
                 "keywords": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "keywords": [
                             "性格陷阱",
                             "遗弃陷阱",
@@ -31,29 +36,78 @@
                         ],
                         "confidence": 0.9
                     },
-                    "raw": "{\"keywords\":[\"性格陷阱\", \"遗弃陷阱\", \"情感剥夺\", \"自卑陷阱\", \"原生家庭\"], \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"keywords\":[\"性格陷阱\",\"遗弃陷阱\",\"情感剥夺\",\"自卑陷阱\",\"原生家庭\"],\"confidence\":0.9}"
                 },
                 "topics": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "primary_topic": "心理",
                         "subtopics": [
-                            "性格",
-                            "心理咨询"
+                            "自我成长",
+                            "原生家庭"
                         ],
-                        "content_intent": "经验分享",
-                        "content_type": "图文",
+                        "content_intent": "教程",
+                        "content_type": "教程清单",
                         "confidence": 0.9
                     },
-                    "raw": "{\"primary_topic\": \"心理\", \"subtopics\": [\"性格\", \"心理咨询\"], \"content_intent\": \"经验分享\", \"content_type\": \"图文\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"primary_topic\":\"心理\",\"subtopics\":[\"自我成长\",\"原生家庭\"],\"content_intent\":\"教程\",\"content_type\":\"教程清单\",\"confidence\":0.9}"
+                },
+                "entities_concepts": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "entities": {
+                            "people": [],
+                            "orgs": [],
+                            "products": [],
+                            "locations": []
+                        },
+                        "concepts": [
+                            "性格陷阱",
+                            "遗弃陷阱",
+                            "情感剥夺",
+                            "自卑陷阱",
+                            "苛刻标准",
+                            "原生家庭",
+                            "心理咨询",
+                            "自我成长"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"entities\":{\"people\":[],\"orgs\":[],\"products\":[],\"locations\":[]},\"concepts\":[\"性格陷阱\",\"遗弃陷阱\",\"情感剥夺\",\"自卑陷阱\",\"苛刻标准\",\"原生家庭\",\"心理咨询\",\"自我成长\"],\"confidence\":0.9}"
+                },
+                "takeaways": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "takeaways": [
+                            "11种性格陷阱（如遗弃恐惧、自卑感）的形成与原生家庭经历密切相关，需识别其具体表现",
+                            "提供系统性修补方法和自我成长路径，帮助打破负面行为循环",
+                            "强调心理学知识在自我疗愈中的实践价值，适用于个人改善和心理咨询参考"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"takeaways\":[\"11种性格陷阱（如遗弃恐惧、自卑感）的形成与原生家庭经历密切相关，需识别其具体表现\",\"提供系统性修补方法和自我成长路径，帮助打破负面行为循环\",\"强调心理学知识在自我疗愈中的实践价值，适用于个人改善和心理咨询参考\"],\"confidence\":0.9}"
+                },
+                "steps": {
+                    "ok": false,
+                    "error": {
+                        "type": "ValueError",
+                        "message": "steps: steps length must be between 2 and 7"
+                    },
+                    "raw": "{\"version\":\"1.0\",\"steps\":[],\"confidence\":0.9}",
+                    "prompt_excerpt": "L2.4 步骤抽取（仅教程/攻略触发）：如果内容是教程/攻略，抽取2-7步。每步包含 step(数字从1开始)、action（一句话）、可选 tip。仅输出JSON：{\"version\":\"1.0\",\"steps\":[{\"step\":1,\"action\":\"…\",\"tip\":\"…\"}], \"confidence\":0~1}内容：11种性格陷阱全解析💔明明很优秀却总觉得自己不够好💔总是被冷漠的人吸引，重复痛苦💔在亲密关系里极度缺乏安全感💔害怕失败到不敢尝试新事物...整理了超全思维导图笔记（见图！快存！）：▫️11种致命性格缺陷▫️它们是怎么形成的▫️具体表现和案例▫️如何一步步修补自己\t真的不是你的错，但改变是自己的责任。\t🌟11种性格缺陷全解析→遗弃陷阱：永远害怕被抛弃→情感剥夺：总觉得得不到爱→自卑陷阱：认为自己不配被爱→苛刻标准：必须完美才值得被爱...（详细见上图）\t﻿#心理学[话题]#﻿   ﻿#自我成长[话题]#﻿   ﻿#原生家庭[话题]#﻿   ﻿#疗愈[话题]#﻿   ﻿#学点儿心理学[话题]#﻿   ﻿#性格[话题]#﻿ ﻿#心理咨询[话题]#﻿﻿"
                 }
             },
-            "status": "ok",
+            "status": "partial",
             "summary": {
-                "summary_200": "文章系统解析了11种常见性格陷阱（如遗弃陷阱、情感剥夺、自卑陷阱、苛刻标准等），详细阐述其形成原因（多与原生家庭相关）、具体表现案例及逐步修复方法。核心观点指出这些心理模式并非个人过错，但改变是自我责任，旨在通过心理学知识促进自我认知与成长疗愈。",
-                "confidence": 0.95
+                "version": "1.0",
+                "summary_200": "解析11种常见性格陷阱（如遗弃恐惧、情感剥夺、自卑感、苛刻标准等），揭示其形成原因（多与原生家庭相关）、具体表现及负面影响，并提供修补方法与自我成长方向，强调通过心理学知识实现自我疗愈。",
+                "confidence": 0.9
             },
             "keywords": {
+                "version": "1.0",
                 "keywords": [
                     "性格陷阱",
                     "遗弃陷阱",
@@ -64,13 +118,23 @@
                 "confidence": 0.9
             },
             "topics": {
+                "version": "1.0",
                 "primary_topic": "心理",
                 "subtopics": [
-                    "性格",
-                    "心理咨询"
+                    "自我成长",
+                    "原生家庭"
                 ],
-                "content_intent": "经验分享",
-                "content_type": "图文",
+                "content_intent": "教程",
+                "content_type": "教程清单",
+                "confidence": 0.9
+            },
+            "takeaways": {
+                "version": "1.0",
+                "takeaways": [
+                    "11种性格陷阱（如遗弃恐惧、自卑感）的形成与原生家庭经历密切相关，需识别其具体表现",
+                    "提供系统性修补方法和自我成长路径，帮助打破负面行为循环",
+                    "强调心理学知识在自我疗愈中的实践价值，适用于个人改善和心理咨询参考"
+                ],
                 "confidence": 0.9
             }
         },
@@ -80,64 +144,131 @@
                 "summary": {
                     "ok": true,
                     "result": {
-                        "summary_200": "阿里开源金融领域专用工具“通义点金”，提供预训练模型DianJin-R1系列（7B/13B/32B），具备金融知识理解能力。支持金融服务（信用卡提醒、营销生成）、投研（研报摘要、新闻提取）、运营数据查询（指标问答、异常预警）三大场景，提供文档问答、指标可视化、多智能体系统编排等API，可嵌入网页或企业后台，适用于金融文本理解、客服意图识别等任务。",
+                        "version": "1.0",
+                        "summary_200": "阿里开源金融领域工具通义点金，提供预训练模型DianJin-R1系列（7B/13B/32B）及高质量金融数据集。支持金融服务、投研新闻、运营数据查询三大场景，具备文档问答、指标可视化、多智能体系统等API能力，适用于研报摘要、客服意图识别、指标分析等金融应用开发。",
                         "confidence": 0.95
                     },
-                    "raw": "{\"summary_200\": \"阿里开源金融领域专用工具“通义点金”，提供预训练模型DianJin-R1系列（7B/13B/32B），具备金融知识理解能力。支持金融服务（信用卡提醒、营销生成）、投研（研报摘要、新闻提取）、运营数据查询（指标问答、异常预警）三大场景，提供文档问答、指标可视化、多智能体系统编排等API，可嵌入网页或企业后台，适用于金融文本理解、客服意图识别等任务。\", \"confidence\": 0.95}"
+                    "raw": "{\"version\":\"1.0\",\"summary_200\":\"阿里开源金融领域工具通义点金，提供预训练模型DianJin-R1系列（7B/13B/32B）及高质量金融数据集。支持金融服务、投研新闻、运营数据查询三大场景，具备文档问答、指标可视化、多智能体系统等API能力，适用于研报摘要、客服意图识别、指标分析等金融应用开发。\", \"confidence\":0.95}"
                 },
                 "keywords": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "keywords": [
                             "通义点金",
                             "DianJin-R1",
                             "多智能体系统",
                             "金融大模型",
-                            "文档问答"
+                            "API"
                         ],
                         "confidence": 0.95
                     },
-                    "raw": "{\"keywords\":[\"通义点金\", \"DianJin-R1\", \"多智能体系统\", \"金融大模型\", \"文档问答\"], \"confidence\": 0.95}"
+                    "raw": "{\"version\":\"1.0\",\"keywords\":[\"通义点金\",\"DianJin-R1\",\"多智能体系统\",\"金融大模型\",\"API\"],\"confidence\":0.95}"
                 },
                 "topics": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "primary_topic": "科技",
                         "subtopics": [
-                            "AI工具",
                             "理财"
                         ],
                         "content_intent": "新闻",
                         "content_type": "长文",
                         "confidence": 0.9
                     },
-                    "raw": "{\"primary_topic\": \"科技\", \"subtopics\": [\"AI工具\", \"理财\"], \"content_intent\": \"新闻\", \"content_type\": \"长文\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"primary_topic\":\"科技\",\"subtopics\":[\"理财\"],\"content_intent\":\"新闻\",\"content_type\":\"长文\",\"confidence\":0.9}"
+                },
+                "entities_concepts": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "entities": {
+                            "people": [],
+                            "orgs": [
+                                "阿里"
+                            ],
+                            "products": [
+                                "通义点金",
+                                "DianJin-R1-7B",
+                                "DianJin-R1-13B",
+                                "DianJin-R1-32B"
+                            ],
+                            "locations": []
+                        },
+                        "concepts": [
+                            "金融大模型",
+                            "文档问答",
+                            "指标问答",
+                            "多智能体系统",
+                            "API",
+                            "金融服务",
+                            "投研分析",
+                            "运营数据查询"
+                        ],
+                        "confidence": 0.95
+                    },
+                    "raw": "{\"version\":\"1.0\",\"entities\":{\"people\":[],\"orgs\":[\"阿里\"],\"products\":[\"通义点金\",\"DianJin-R1-7B\",\"DianJin-R1-13B\",\"DianJin-R1-32B\"],\"locations\":[]},\"concepts\":[\"金融大模型\",\"文档问答\",\"指标问答\",\"多智能体系统\",\"API\",\"金融服务\",\"投研分析\",\"运营数据查询\"],\"confidence\":0.95}"
+                },
+                "takeaways": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "takeaways": [
+                            "阿里开源金融工具通义点金，提供DianJin-R1系列预训练模型及金融数据集，专为金融领域优化",
+                            "支持金融服务、投研分析、运营查询三大核心场景，具备文档问答、指标可视化等API能力",
+                            "适用于研报摘要、客服意图识别、指标分析等金融应用开发，提升智能化服务水平"
+                        ],
+                        "confidence": 0.95
+                    },
+                    "raw": "{\"version\":\"1.0\",\"takeaways\":[\"阿里开源金融工具通义点金，提供DianJin-R1系列预训练模型及金融数据集，专为金融领域优化\",\"支持金融服务、投研分析、运营查询三大核心场景，具备文档问答、指标可视化等API能力\",\"适用于研报摘要、客服意图识别、指标分析等金融应用开发，提升智能化服务水平\"],\"confidence\":0.95}"
+                },
+                "steps": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "steps": [],
+                        "confidence": null,
+                        "not_applicable": true,
+                        "reason": "not tutorial"
+                    }
                 }
             },
             "status": "ok",
             "summary": {
-                "summary_200": "阿里开源金融领域专用工具“通义点金”，提供预训练模型DianJin-R1系列（7B/13B/32B），具备金融知识理解能力。支持金融服务（信用卡提醒、营销生成）、投研（研报摘要、新闻提取）、运营数据查询（指标问答、异常预警）三大场景，提供文档问答、指标可视化、多智能体系统编排等API，可嵌入网页或企业后台，适用于金融文本理解、客服意图识别等任务。",
+                "version": "1.0",
+                "summary_200": "阿里开源金融领域工具通义点金，提供预训练模型DianJin-R1系列（7B/13B/32B）及高质量金融数据集。支持金融服务、投研新闻、运营数据查询三大场景，具备文档问答、指标可视化、多智能体系统等API能力，适用于研报摘要、客服意图识别、指标分析等金融应用开发。",
                 "confidence": 0.95
             },
             "keywords": {
+                "version": "1.0",
                 "keywords": [
                     "通义点金",
                     "DianJin-R1",
                     "多智能体系统",
                     "金融大模型",
-                    "文档问答"
+                    "API"
                 ],
                 "confidence": 0.95
             },
             "topics": {
+                "version": "1.0",
                 "primary_topic": "科技",
                 "subtopics": [
-                    "AI工具",
                     "理财"
                 ],
                 "content_intent": "新闻",
                 "content_type": "长文",
                 "confidence": 0.9
+            },
+            "takeaways": {
+                "version": "1.0",
+                "takeaways": [
+                    "阿里开源金融工具通义点金，提供DianJin-R1系列预训练模型及金融数据集，专为金融领域优化",
+                    "支持金融服务、投研分析、运营查询三大核心场景，具备文档问答、指标可视化等API能力",
+                    "适用于研报摘要、客服意图识别、指标分析等金融应用开发，提升智能化服务水平"
+                ],
+                "confidence": 0.95
             }
         },
         {
@@ -146,63 +277,133 @@
                 "summary": {
                     "ok": true,
                     "result": {
-                        "summary_200": "作者分享了一套高效自主学习体系：1）课前通过small talk快速获取课程重点；2）课中用otter转录+拍照，通过ChatGPT生成结构化课程摘要（一页纸docx）；3）课后制作工具包docx分享同学；4）考前组织线上讨论室进行协作复习（如Kevin主讲核心逻辑）。核心方法论是“自主架构学习通路”，强调在没有标准答案的环境中创造自己的学习系统与协作网络。",
+                        "version": "1.0",
+                        "summary_200": "分享个人留学学习体系构建经验：通过三条核心通路（课前社交获取重点、课中双设备协同转录与AI解析整合、课后制作工具包共享同学）提升效率；临考时组织线上复习会议深化理解。强调在缺乏标准答案的环境中自主架构学习路径的方法论。",
                         "confidence": 0.9
                     },
-                    "raw": "{\"summary_200\": \"作者分享了一套高效自主学习体系：1）课前通过small talk快速获取课程重点；2）课中用otter转录+拍照，通过ChatGPT生成结构化课程摘要（一页纸docx）；3）课后制作工具包docx分享同学；4）考前组织线上讨论室进行协作复习（如Kevin主讲核心逻辑）。核心方法论是“自主架构学习通路”，强调在没有标准答案的环境中创造自己的学习系统与协作网络。\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"summary_200\":\"分享个人留学学习体系构建经验：通过三条核心通路（课前社交获取重点、课中双设备协同转录与AI解析整合、课后制作工具包共享同学）提升效率；临考时组织线上复习会议深化理解。强调在缺乏标准答案的环境中自主架构学习路径的方法论。\", \"confidence\":0.9}"
                 },
                 "keywords": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "keywords": [
-                            "学习通路",
                             "docx",
-                            "ChatGPT",
+                            "otter",
+                            "chatGPT pro",
                             "Integrity Discussion",
-                            "腾讯会议室"
+                            "UEEC10"
                         ],
                         "confidence": 0.9
                     },
-                    "raw": "{\"keywords\":[\"学习通路\", \"docx\", \"ChatGPT\", \"Integrity Discussion\", \"腾讯会议室\"], \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"keywords\":[\"docx\",\"otter\",\"chatGPT pro\",\"Integrity Discussion\",\"UEEC10\"],\"confidence\":0.9}"
                 },
                 "topics": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "primary_topic": "教育",
                         "subtopics": [
-                            "学习",
-                            "留学"
+                            "留学",
+                            "学习"
                         ],
                         "content_intent": "经验分享",
                         "content_type": "图文",
                         "confidence": 0.9
                     },
-                    "raw": "{\"primary_topic\": \"教育\", \"subtopics\": [\"学习\", \"留学\"], \"content_intent\": \"经验分享\", \"content_type\": \"图文\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"primary_topic\":\"教育\",\"subtopics\":[\"留学\",\"学习\"],\"content_intent\":\"经验分享\",\"content_type\":\"图文\",\"confidence\":0.9}"
+                },
+                "entities_concepts": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "entities": {
+                            "people": [
+                                "Kevin"
+                            ],
+                            "orgs": [],
+                            "products": [
+                                "otter",
+                                "chatGPT pro",
+                                "腾讯会议"
+                            ],
+                            "locations": [
+                                "澳洲"
+                            ]
+                        },
+                        "concepts": [
+                            "学习通路",
+                            "small talk",
+                            "逻辑链",
+                            "docx制作",
+                            "课程概览",
+                            "工具包",
+                            "人际通路",
+                            "结构迁移式"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"entities\":{\"people\":[\"Kevin\"],\"orgs\":[],\"products\":[\"otter\",\"chatGPT pro\",\"腾讯会议\"],\"locations\":[\"澳洲\"]},\"concepts\":[\"学习通路\",\"small talk\",\"逻辑链\",\"docx制作\",\"课程概览\",\"工具包\",\"人际通路\",\"结构迁移式\"],\"confidence\":0.9}"
+                },
+                "takeaways": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "takeaways": [
+                            "构建三条核心学习通路：课前社交获取重点、课中AI辅助整合、课后制作共享工具包，形成高效学习体系",
+                            "临考前组织线上复习会议，通过协作讲解深化理解，延伸人际网络与知识通路",
+                            "在无标准答案环境中自主架构学习路径，强调方法论迁移与个性化解决方案的价值"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"takeaways\":[\"构建三条核心学习通路：课前社交获取重点、课中AI辅助整合、课后制作共享工具包，形成高效学习体系\",\"临考前组织线上复习会议，通过协作讲解深化理解，延伸人际网络与知识通路\",\"在无标准答案环境中自主架构学习路径，强调方法论迁移与个性化解决方案的价值\"],\"confidence\":0.9}"
+                },
+                "steps": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "steps": [],
+                        "confidence": null,
+                        "not_applicable": true,
+                        "reason": "not tutorial"
+                    }
                 }
             },
             "status": "ok",
             "summary": {
-                "summary_200": "作者分享了一套高效自主学习体系：1）课前通过small talk快速获取课程重点；2）课中用otter转录+拍照，通过ChatGPT生成结构化课程摘要（一页纸docx）；3）课后制作工具包docx分享同学；4）考前组织线上讨论室进行协作复习（如Kevin主讲核心逻辑）。核心方法论是“自主架构学习通路”，强调在没有标准答案的环境中创造自己的学习系统与协作网络。",
+                "version": "1.0",
+                "summary_200": "分享个人留学学习体系构建经验：通过三条核心通路（课前社交获取重点、课中双设备协同转录与AI解析整合、课后制作工具包共享同学）提升效率；临考时组织线上复习会议深化理解。强调在缺乏标准答案的环境中自主架构学习路径的方法论。",
                 "confidence": 0.9
             },
             "keywords": {
+                "version": "1.0",
                 "keywords": [
-                    "学习通路",
                     "docx",
-                    "ChatGPT",
+                    "otter",
+                    "chatGPT pro",
                     "Integrity Discussion",
-                    "腾讯会议室"
+                    "UEEC10"
                 ],
                 "confidence": 0.9
             },
             "topics": {
+                "version": "1.0",
                 "primary_topic": "教育",
                 "subtopics": [
-                    "学习",
-                    "留学"
+                    "留学",
+                    "学习"
                 ],
                 "content_intent": "经验分享",
                 "content_type": "图文",
+                "confidence": 0.9
+            },
+            "takeaways": {
+                "version": "1.0",
+                "takeaways": [
+                    "构建三条核心学习通路：课前社交获取重点、课中AI辅助整合、课后制作共享工具包，形成高效学习体系",
+                    "临考前组织线上复习会议，通过协作讲解深化理解，延伸人际网络与知识通路",
+                    "在无标准答案环境中自主架构学习路径，强调方法论迁移与个性化解决方案的价值"
+                ],
                 "confidence": 0.9
             }
         },
@@ -212,28 +413,31 @@
                 "summary": {
                     "ok": true,
                     "result": {
-                        "summary_200": "博查推出Deep Research初创扶持计划，为AI研究方向的项目免费提供最高100万次Web Search API调用额度，以解决初期成本问题。申请条件包括项目需为DeepResearch方向、有明确研究目标和落地规划，并在产品界面体现博查服务支持。优秀项目还可获得技术指导和资源对接。申请截止日期为2025年9月30日。",
+                        "version": "1.0",
+                        "summary_200": "博查推出DeepResearch初创扶持计划，为AI研究方向初创项目免费提供最高100万次Web Search API调用额度，并可能提供后续折扣及生态支持。申请需产品具明确研究目标和落地规划，截止日期为2025年9月30日。",
                         "confidence": 0.95
                     },
-                    "raw": "{\"summary_200\": \"博查推出Deep Research初创扶持计划，为AI研究方向的项目免费提供最高100万次Web Search API调用额度，以解决初期成本问题。申请条件包括项目需为DeepResearch方向、有明确研究目标和落地规划，并在产品界面体现博查服务支持。优秀项目还可获得技术指导和资源对接。申请截止日期为2025年9月30日。\", \"confidence\": 0.95}"
+                    "raw": "{\"version\":\"1.0\",\"summary_200\":\"博查推出DeepResearch初创扶持计划，为AI研究方向初创项目免费提供最高100万次Web Search API调用额度，并可能提供后续折扣及生态支持。申请需产品具明确研究目标和落地规划，截止日期为2025年9月30日。\", \"confidence\":0.95}"
                 },
                 "keywords": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "keywords": [
-                            "博查搜索",
+                            "博查",
                             "DeepResearch",
                             "Web Search API",
                             "AGI",
-                            "初创扶持计划"
+                            "免费搜索API"
                         ],
-                        "confidence": 0.9
+                        "confidence": 0.95
                     },
-                    "raw": "{\"keywords\":[\"博查搜索\", \"DeepResearch\", \"Web Search API\", \"AGI\", \"初创扶持计划\"], \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"keywords\":[\"博查\",\"DeepResearch\",\"Web Search API\",\"AGI\",\"免费搜索API\"],\"confidence\":0.95}"
                 },
                 "topics": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "primary_topic": "科技",
                         "subtopics": [
                             "AI工具"
@@ -242,25 +446,78 @@
                         "content_type": "图文",
                         "confidence": 0.9
                     },
-                    "raw": "{\"primary_topic\": \"科技\", \"subtopics\": [\"AI工具\"], \"content_intent\": \"活动\", \"content_type\": \"图文\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"primary_topic\":\"科技\",\"subtopics\":[\"AI工具\"],\"content_intent\":\"活动\",\"content_type\":\"图文\",\"confidence\":0.9}"
+                },
+                "entities_concepts": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "entities": {
+                            "people": [],
+                            "orgs": [
+                                "博查"
+                            ],
+                            "products": [
+                                "DeepResearch",
+                                "Web Search API"
+                            ],
+                            "locations": []
+                        },
+                        "concepts": [
+                            "AGI",
+                            "初创扶持计划",
+                            "免费调用额度",
+                            "折扣减免",
+                            "生态支持",
+                            "落地规划"
+                        ],
+                        "confidence": 0.95
+                    },
+                    "raw": "{\"version\":\"1.0\",\"entities\":{\"people\":[],\"orgs\":[\"博查\"],\"products\":[\"DeepResearch\",\"Web Search API\"],\"locations\":[]},\"concepts\":[\"AGI\",\"初创扶持计划\",\"免费调用额度\",\"折扣减免\",\"生态支持\",\"落地规划\"],\"confidence\":0.95}"
+                },
+                "takeaways": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "takeaways": [
+                            "博查推出DeepResearch初创扶持计划，提供最高100万次免费Web Search API调用额度，降低AI项目初期成本",
+                            "扶持计划包括免费调用、后续折扣减免及生态支持（技术指导与资源对接），助力AGI发展",
+                            "申请需项目具明确研究目标和落地规划，并需在产品界面体现博查搜索服务，截止2025年9月30日"
+                        ],
+                        "confidence": 0.95
+                    },
+                    "raw": "{\"version\":\"1.0\",\"takeaways\":[\"博查推出DeepResearch初创扶持计划，提供最高100万次免费Web Search API调用额度，降低AI项目初期成本\",\"扶持计划包括免费调用、后续折扣减免及生态支持（技术指导与资源对接），助力AGI发展\",\"申请需项目具明确研究目标和落地规划，并需在产品界面体现博查搜索服务，截止2025年9月30日\"],\"confidence\":0.95}"
+                },
+                "steps": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "steps": [],
+                        "confidence": null,
+                        "not_applicable": true,
+                        "reason": "not tutorial"
+                    }
                 }
             },
             "status": "ok",
             "summary": {
-                "summary_200": "博查推出Deep Research初创扶持计划，为AI研究方向的项目免费提供最高100万次Web Search API调用额度，以解决初期成本问题。申请条件包括项目需为DeepResearch方向、有明确研究目标和落地规划，并在产品界面体现博查服务支持。优秀项目还可获得技术指导和资源对接。申请截止日期为2025年9月30日。",
+                "version": "1.0",
+                "summary_200": "博查推出DeepResearch初创扶持计划，为AI研究方向初创项目免费提供最高100万次Web Search API调用额度，并可能提供后续折扣及生态支持。申请需产品具明确研究目标和落地规划，截止日期为2025年9月30日。",
                 "confidence": 0.95
             },
             "keywords": {
+                "version": "1.0",
                 "keywords": [
-                    "博查搜索",
+                    "博查",
                     "DeepResearch",
                     "Web Search API",
                     "AGI",
-                    "初创扶持计划"
+                    "免费搜索API"
                 ],
-                "confidence": 0.9
+                "confidence": 0.95
             },
             "topics": {
+                "version": "1.0",
                 "primary_topic": "科技",
                 "subtopics": [
                     "AI工具"
@@ -268,6 +525,15 @@
                 "content_intent": "活动",
                 "content_type": "图文",
                 "confidence": 0.9
+            },
+            "takeaways": {
+                "version": "1.0",
+                "takeaways": [
+                    "博查推出DeepResearch初创扶持计划，提供最高100万次免费Web Search API调用额度，降低AI项目初期成本",
+                    "扶持计划包括免费调用、后续折扣减免及生态支持（技术指导与资源对接），助力AGI发展",
+                    "申请需项目具明确研究目标和落地规划，并需在产品界面体现博查搜索服务，截止2025年9月30日"
+                ],
+                "confidence": 0.95
             }
         },
         {
@@ -276,62 +542,136 @@
                 "summary": {
                     "ok": true,
                     "result": {
-                        "summary_200": "作者以亲身经历警告独立开发者不要盲目注册海外公司（如英国公司）。注册后面临高额续费（1800+元）、复杂税务（年报、VAT等）和代办服务不靠谱等问题。推荐更优收款方案：1）用护照直接申请Stripe，绑定香港银行卡提现；2）Creem（支持提现到支付宝）；3）PayPal等。强调小产品/SaaS开发者只需“护照+Stripe+港卡”即可解决收款，避免不必要的成本和税务负担。",
+                        "version": "1.0",
+                        "summary_200": "作者以亲身经历警示独立开发者勿盲目注册海外公司（如英国公司需年费1800+及处理复杂税务）。推荐更优收款方案：用护照直接申请Stripe+香港银行卡实现免费收款，或选择Creem、PayPal等支持国内提现的平台，避免不必要的公司维护成本与税务负担。",
                         "confidence": 0.95
                     },
-                    "raw": "{\"summary_200\": \"作者以亲身经历警告独立开发者不要盲目注册海外公司（如英国公司）。注册后面临高额续费（1800+元）、复杂税务（年报、VAT等）和代办服务不靠谱等问题。推荐更优收款方案：1）用护照直接申请Stripe，绑定香港银行卡提现；2）Creem（支持提现到支付宝）；3）PayPal等。强调小产品/SaaS开发者只需“护照+Stripe+港卡”即可解决收款，避免不必要的成本和税务负担。\", \"confidence\": 0.95}"
+                    "raw": "{\"version\":\"1.0\",\"summary_200\":\"作者以亲身经历警示独立开发者勿盲目注册海外公司（如英国公司需年费1800+及处理复杂税务）。推荐更优收款方案：用护照直接申请Stripe+香港银行卡实现免费收款，或选择Creem、PayPal等支持国内提现的平台，避免不必要的公司维护成本与税务负担。\", \"confidence\":0.95}"
                 },
                 "keywords": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "keywords": [
-                            "独立开发",
-                            "英国公司",
                             "Stripe",
+                            "英国公司",
                             "VAT",
-                            "香港银行卡"
+                            "香港银行卡",
+                            "Creem"
                         ],
-                        "confidence": 0.9
+                        "confidence": 0.95
                     },
-                    "raw": "{\"keywords\":[\"独立开发\", \"英国公司\", \"Stripe\", \"VAT\", \"香港银行卡\"], \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"keywords\":[\"Stripe\",\"英国公司\",\"VAT\",\"香港银行卡\",\"Creem\"],\"confidence\":0.95}"
                 },
                 "topics": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "primary_topic": "职场",
                         "subtopics": [
-                            "独立开发"
+                            "理财"
                         ],
                         "content_intent": "经验分享",
-                        "content_type": "长文",
+                        "content_type": "随笔",
                         "confidence": 0.9
                     },
-                    "raw": "{\"primary_topic\": \"职场\", \"subtopics\": [\"独立开发\"], \"content_intent\": \"经验分享\", \"content_type\": \"长文\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"primary_topic\":\"职场\",\"subtopics\":[\"理财\"],\"content_intent\":\"经验分享\",\"content_type\":\"随笔\",\"confidence\":0.9}"
+                },
+                "entities_concepts": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "entities": {
+                            "people": [],
+                            "orgs": [
+                                "淘宝",
+                                "Stripe",
+                                "Creem",
+                                "Paypal",
+                                "万里汇",
+                                "空中云汇"
+                            ],
+                            "products": [
+                                "英国公司",
+                                "香港银行卡",
+                                "支付宝"
+                            ],
+                            "locations": [
+                                "中国大陆",
+                                "香港"
+                            ]
+                        },
+                        "concepts": [
+                            "独立开发",
+                            "产品出海",
+                            "税务问题",
+                            "VAT",
+                            "收款方案",
+                            "SaaS"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"entities\":{\"people\":[],\"orgs\":[\"淘宝\",\"Stripe\",\"Creem\",\"Paypal\",\"万里汇\",\"空中云汇\"],\"products\":[\"英国公司\",\"香港银行卡\",\"支付宝\"],\"locations\":[\"中国大陆\",\"香港\"]},\"concepts\":[\"独立开发\",\"产品出海\",\"税务问题\",\"VAT\",\"收款方案\",\"SaaS\"],\"confidence\":0.9}"
+                },
+                "takeaways": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "takeaways": [
+                            "避免盲目注册海外公司（如英国公司），其年费高昂（1800+）且税务处理复杂（VAT、年报等）增加负担",
+                            "推荐使用护照直接申请Stripe+香港银行卡的免费收款方案，资金自主且无需公司维护成本",
+                            "可选择Creem、PayPal等支持国内提现的平台，或万里汇等国内外汇平台，灵活解决独立开发收款需求"
+                        ],
+                        "confidence": 0.95
+                    },
+                    "raw": "{\"version\":\"1.0\",\"takeaways\":[\"避免盲目注册海外公司（如英国公司），其年费高昂（1800+）且税务处理复杂（VAT、年报等）增加负担\",\"推荐使用护照直接申请Stripe+香港银行卡的免费收款方案，资金自主且无需公司维护成本\",\"可选择Creem、PayPal等支持国内提现的平台，或万里汇等国内外汇平台，灵活解决独立开发收款需求\"],\"confidence\":0.95}"
+                },
+                "steps": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "steps": [],
+                        "confidence": null,
+                        "not_applicable": true,
+                        "reason": "not tutorial"
+                    }
                 }
             },
             "status": "ok",
             "summary": {
-                "summary_200": "作者以亲身经历警告独立开发者不要盲目注册海外公司（如英国公司）。注册后面临高额续费（1800+元）、复杂税务（年报、VAT等）和代办服务不靠谱等问题。推荐更优收款方案：1）用护照直接申请Stripe，绑定香港银行卡提现；2）Creem（支持提现到支付宝）；3）PayPal等。强调小产品/SaaS开发者只需“护照+Stripe+港卡”即可解决收款，避免不必要的成本和税务负担。",
+                "version": "1.0",
+                "summary_200": "作者以亲身经历警示独立开发者勿盲目注册海外公司（如英国公司需年费1800+及处理复杂税务）。推荐更优收款方案：用护照直接申请Stripe+香港银行卡实现免费收款，或选择Creem、PayPal等支持国内提现的平台，避免不必要的公司维护成本与税务负担。",
                 "confidence": 0.95
             },
             "keywords": {
+                "version": "1.0",
                 "keywords": [
-                    "独立开发",
-                    "英国公司",
                     "Stripe",
+                    "英国公司",
                     "VAT",
-                    "香港银行卡"
+                    "香港银行卡",
+                    "Creem"
                 ],
-                "confidence": 0.9
+                "confidence": 0.95
             },
             "topics": {
+                "version": "1.0",
                 "primary_topic": "职场",
                 "subtopics": [
-                    "独立开发"
+                    "理财"
                 ],
                 "content_intent": "经验分享",
-                "content_type": "长文",
+                "content_type": "随笔",
                 "confidence": 0.9
+            },
+            "takeaways": {
+                "version": "1.0",
+                "takeaways": [
+                    "避免盲目注册海外公司（如英国公司），其年费高昂（1800+）且税务处理复杂（VAT、年报等）增加负担",
+                    "推荐使用护照直接申请Stripe+香港银行卡的免费收款方案，资金自主且无需公司维护成本",
+                    "可选择Creem、PayPal等支持国内提现的平台，或万里汇等国内外汇平台，灵活解决独立开发收款需求"
+                ],
+                "confidence": 0.95
             }
         },
         {
@@ -340,63 +680,121 @@
                 "summary": {
                     "ok": true,
                     "result": {
-                        "summary_200": "文章分享了10多个高质量且兼容shadcn/ui的免费前端组件库集合，包含动画库和基础组件代码。作者邀请读者在评论区补充其他优质组件库资源，并承诺若补充数量多将整理更全面的集合列表。内容聚焦于提升前端开发效率的实用资源推荐。",
-                        "confidence": 0.8
+                        "version": "1.0",
+                        "summary_200": "分享10余个高质量且兼容shadcn/ui的免费前端组件库集合，包含动画库与基础组件代码，适用于独立开发与前端项目。鼓励社区补充推荐，未来可能整理更全面清单。",
+                        "confidence": 0.9
                     },
-                    "raw": "{\"summary_200\": \"文章分享了10多个高质量且兼容shadcn/ui的免费前端组件库集合，包含动画库和基础组件代码。作者邀请读者在评论区补充其他优质组件库资源，并承诺若补充数量多将整理更全面的集合列表。内容聚焦于提升前端开发效率的实用资源推荐。\", \"confidence\": 0.8}"
+                    "raw": "{\"version\":\"1.0\",\"summary_200\":\"分享10余个高质量且兼容shadcn/ui的免费前端组件库集合，包含动画库与基础组件代码，适用于独立开发与前端项目。鼓励社区补充推荐，未来可能整理更全面清单。\", \"confidence\":0.9}"
                 },
                 "keywords": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "keywords": [
                             "shadcn/ui",
                             "前端组件库",
                             "动画库",
-                            "UI组件库",
-                            "基础组件"
+                            "基础组件",
+                            "UI组件库"
                         ],
                         "confidence": 0.9
                     },
-                    "raw": "{\"keywords\":[\"shadcn/ui\", \"前端组件库\", \"动画库\", \"UI组件库\", \"基础组件\"], \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"keywords\":[\"shadcn/ui\",\"前端组件库\",\"动画库\",\"基础组件\",\"UI组件库\"],\"confidence\":0.9}"
                 },
                 "topics": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "primary_topic": "科技",
                         "subtopics": [
-                            "编程",
-                            "前端"
+                            "编程"
                         ],
                         "content_intent": "经验分享",
                         "content_type": "图文",
                         "confidence": 0.9
                     },
-                    "raw": "{\"primary_topic\": \"科技\", \"subtopics\": [\"编程\", \"前端\"], \"content_intent\": \"经验分享\", \"content_type\": \"图文\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"primary_topic\":\"科技\",\"subtopics\":[\"编程\"],\"content_intent\":\"经验分享\",\"content_type\":\"图文\",\"confidence\":0.9}"
+                },
+                "entities_concepts": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "entities": {
+                            "people": [],
+                            "orgs": [],
+                            "products": [
+                                "shadcn/ui"
+                            ],
+                            "locations": []
+                        },
+                        "concepts": [
+                            "前端组件库",
+                            "动画库",
+                            "基础组件代码",
+                            "独立开发"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"entities\":{\"people\":[],\"orgs\":[],\"products\":[\"shadcn/ui\"],\"locations\":[]},\"concepts\":[\"前端组件库\",\"动画库\",\"基础组件代码\",\"独立开发\"],\"confidence\":0.9}"
+                },
+                "takeaways": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "takeaways": [
+                            "分享10+个兼容shadcn/ui的高质量免费前端组件库，包含动画库和基础组件代码资源",
+                            "适用于独立开发和前端项目，强调组件质量优先于数量的筛选标准",
+                            "鼓励社区协作补充推荐，未来可能基于反馈整理更全面的组件库集合"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"takeaways\":[\"分享10+个兼容shadcn/ui的高质量免费前端组件库，包含动画库和基础组件代码资源\",\"适用于独立开发和前端项目，强调组件质量优先于数量的筛选标准\",\"鼓励社区协作补充推荐，未来可能基于反馈整理更全面的组件库集合\"],\"confidence\":0.9}"
+                },
+                "steps": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "steps": [],
+                        "confidence": null,
+                        "not_applicable": true,
+                        "reason": "not tutorial"
+                    }
                 }
             },
             "status": "ok",
             "summary": {
-                "summary_200": "文章分享了10多个高质量且兼容shadcn/ui的免费前端组件库集合，包含动画库和基础组件代码。作者邀请读者在评论区补充其他优质组件库资源，并承诺若补充数量多将整理更全面的集合列表。内容聚焦于提升前端开发效率的实用资源推荐。",
-                "confidence": 0.8
+                "version": "1.0",
+                "summary_200": "分享10余个高质量且兼容shadcn/ui的免费前端组件库集合，包含动画库与基础组件代码，适用于独立开发与前端项目。鼓励社区补充推荐，未来可能整理更全面清单。",
+                "confidence": 0.9
             },
             "keywords": {
+                "version": "1.0",
                 "keywords": [
                     "shadcn/ui",
                     "前端组件库",
                     "动画库",
-                    "UI组件库",
-                    "基础组件"
+                    "基础组件",
+                    "UI组件库"
                 ],
                 "confidence": 0.9
             },
             "topics": {
+                "version": "1.0",
                 "primary_topic": "科技",
                 "subtopics": [
-                    "编程",
-                    "前端"
+                    "编程"
                 ],
                 "content_intent": "经验分享",
                 "content_type": "图文",
+                "confidence": 0.9
+            },
+            "takeaways": {
+                "version": "1.0",
+                "takeaways": [
+                    "分享10+个兼容shadcn/ui的高质量免费前端组件库，包含动画库和基础组件代码资源",
+                    "适用于独立开发和前端项目，强调组件质量优先于数量的筛选标准",
+                    "鼓励社区协作补充推荐，未来可能基于反馈整理更全面的组件库集合"
+                ],
                 "confidence": 0.9
             }
         },
@@ -406,63 +804,124 @@
                 "summary": {
                     "ok": true,
                     "result": {
-                        "summary_200": "文章分享了一款外网流行的landing page设计，该设计融合夸张特效与日本和风元素，巧妙将室外绿地公园景观过渡到室内科技感界面。作者评价其虽略显花哨可能分散注意力，但视觉效果出众，并附实况图展示具体设计效果。",
-                        "confidence": 0.85
+                        "version": "1.0",
+                        "summary_200": "分享一款外网流行的landing page设计，融合日本和风元素与夸张特效，将室外绿地公园景观过渡到室内科技感界面。设计虽略显花哨但视觉效果突出，附实况演示图。",
+                        "confidence": 0.9
                     },
-                    "raw": "{\"summary_200\": \"文章分享了一款外网流行的landing page设计，该设计融合夸张特效与日本和风元素，巧妙将室外绿地公园景观过渡到室内科技感界面。作者评价其虽略显花哨可能分散注意力，但视觉效果出众，并附实况图展示具体设计效果。\", \"confidence\": 0.85}"
+                    "raw": "{\"version\":\"1.0\",\"summary_200\":\"分享一款外网流行的landing page设计，融合日本和风元素与夸张特效，将室外绿地公园景观过渡到室内科技感界面。设计虽略显花哨但视觉效果突出，附实况演示图。\", \"confidence\":0.9}"
                 },
                 "keywords": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "keywords": [
                             "landing page",
                             "日本和风",
-                            "景观设计",
+                            "绿地公园",
                             "特效",
                             "UI设计"
                         ],
                         "confidence": 0.9
                     },
-                    "raw": "{\"keywords\":[\"landing page\", \"日本和风\", \"景观设计\", \"特效\", \"UI设计\"], \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"keywords\":[\"landing page\",\"日本和风\",\"绿地公园\",\"特效\",\"UI设计\"],\"confidence\":0.9}"
                 },
                 "topics": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "primary_topic": "科技",
                         "subtopics": [
-                            "UI",
-                            "前端开发"
+                            "UI"
                         ],
-                        "content_intent": "测评",
+                        "content_intent": "种草",
                         "content_type": "图文",
                         "confidence": 0.9
                     },
-                    "raw": "{\"primary_topic\": \"科技\", \"subtopics\": [\"UI\", \"前端开发\"], \"content_intent\": \"测评\", \"content_type\": \"图文\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"primary_topic\":\"科技\",\"subtopics\":[\"UI\"],\"content_intent\":\"种草\",\"content_type\":\"图文\",\"confidence\":0.9}"
+                },
+                "entities_concepts": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "entities": {
+                            "people": [],
+                            "orgs": [],
+                            "products": [
+                                "landing page"
+                            ],
+                            "locations": [
+                                "日本"
+                            ]
+                        },
+                        "concepts": [
+                            "特效设计",
+                            "景观融合",
+                            "科技网站",
+                            "和风风格",
+                            "绿地公园过渡"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"entities\":{\"people\":[],\"orgs\":[],\"products\":[\"landing page\"],\"locations\":[\"日本\"]},\"concepts\":[\"特效设计\",\"景观融合\",\"科技网站\",\"和风风格\",\"绿地公园过渡\"],\"confidence\":0.9}"
+                },
+                "takeaways": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "takeaways": [
+                            "外网流行的landing page设计融合日本和风元素与夸张特效，实现室外绿地公园到室内科技界面的视觉过渡",
+                            "设计采用景观融入科技网站的创新手法，虽略显花哨但视觉效果突出，附实况演示",
+                            "适用于独立开发和前端设计参考，展示landing page在视觉表现与用户体验上的优化可能性"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"takeaways\":[\"外网流行的landing page设计融合日本和风元素与夸张特效，实现室外绿地公园到室内科技界面的视觉过渡\",\"设计采用景观融入科技网站的创新手法，虽略显花哨但视觉效果突出，附实况演示\",\"适用于独立开发和前端设计参考，展示landing page在视觉表现与用户体验上的优化可能性\"],\"confidence\":0.9}"
+                },
+                "steps": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "steps": [],
+                        "confidence": null,
+                        "not_applicable": true,
+                        "reason": "not tutorial"
+                    }
                 }
             },
             "status": "ok",
             "summary": {
-                "summary_200": "文章分享了一款外网流行的landing page设计，该设计融合夸张特效与日本和风元素，巧妙将室外绿地公园景观过渡到室内科技感界面。作者评价其虽略显花哨可能分散注意力，但视觉效果出众，并附实况图展示具体设计效果。",
-                "confidence": 0.85
+                "version": "1.0",
+                "summary_200": "分享一款外网流行的landing page设计，融合日本和风元素与夸张特效，将室外绿地公园景观过渡到室内科技感界面。设计虽略显花哨但视觉效果突出，附实况演示图。",
+                "confidence": 0.9
             },
             "keywords": {
+                "version": "1.0",
                 "keywords": [
                     "landing page",
                     "日本和风",
-                    "景观设计",
+                    "绿地公园",
                     "特效",
                     "UI设计"
                 ],
                 "confidence": 0.9
             },
             "topics": {
+                "version": "1.0",
                 "primary_topic": "科技",
                 "subtopics": [
-                    "UI",
-                    "前端开发"
+                    "UI"
                 ],
-                "content_intent": "测评",
+                "content_intent": "种草",
                 "content_type": "图文",
+                "confidence": 0.9
+            },
+            "takeaways": {
+                "version": "1.0",
+                "takeaways": [
+                    "外网流行的landing page设计融合日本和风元素与夸张特效，实现室外绿地公园到室内科技界面的视觉过渡",
+                    "设计采用景观融入科技网站的创新手法，虽略显花哨但视觉效果突出，附实况演示",
+                    "适用于独立开发和前端设计参考，展示landing page在视觉表现与用户体验上的优化可能性"
+                ],
                 "confidence": 0.9
             }
         },
@@ -472,61 +931,186 @@
                 "summary": {
                     "ok": true,
                     "result": {
-                        "summary_200": "文章分析了shadcnUI官网精致而AI直接生成组件简陋的原因：官网通过不同尺寸/位置/组合的组件变体、集中状态管理、响应式交互和数据驱动UI实现高品质，而AI缺乏交互思考且不遵循最佳实践。解决方案是拉取开源官网代码，用Claude等工具拆解工程形成报告（包含组件路径、分层架构、组合模式、完整示例），让AI基于报告学习官网的抽象模式、组合套路和数据驱动方法，从而提升生成UI的质量。",
-                        "confidence": 0.9
+                        "version": "1.0",
+                        "summary_200": "分析shadcnUI官网与AI生成效果的差异：官网通过组件变体组合、状态管理、响应式交互及数据驱动实现精致UI，而AI仅呈现基础组件缺乏交互思考。解决方案是解析开源官网（Next.js框架）形成架构报告，让AI学习分层抽象、组合模式及最佳实践，从而提升生成质量。",
+                        "confidence": 0.95
                     },
-                    "raw": "{\"summary_200\": \"文章分析了shadcnUI官网精致而AI直接生成组件简陋的原因：官网通过不同尺寸/位置/组合的组件变体、集中状态管理、响应式交互和数据驱动UI实现高品质，而AI缺乏交互思考且不遵循最佳实践。解决方案是拉取开源官网代码，用Claude等工具拆解工程形成报告（包含组件路径、分层架构、组合模式、完整示例），让AI基于报告学习官网的抽象模式、组合套路和数据驱动方法，从而提升生成UI的质量。\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"summary_200\":\"分析shadcnUI官网与AI生成效果的差异：官网通过组件变体组合、状态管理、响应式交互及数据驱动实现精致UI，而AI仅呈现基础组件缺乏交互思考。解决方案是解析开源官网（Next.js框架）形成架构报告，让AI学习分层抽象、组合模式及最佳实践，从而提升生成质量。\", \"confidence\":0.95}"
                 },
                 "keywords": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "keywords": [
                             "shadcnUI",
-                            "Claude",
                             "Next.js",
-                            "数据驱动UI",
-                            "组件变体"
+                            "Claude opus",
+                            "组件变体",
+                            "数据驱动UI"
                         ],
-                        "confidence": 0.9
+                        "confidence": 0.95
                     },
-                    "raw": "{\"keywords\":[\"shadcnUI\", \"Claude\", \"Next.js\", \"数据驱动UI\", \"组件变体\"], \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"keywords\":[\"shadcnUI\",\"Next.js\",\"Claude opus\",\"组件变体\",\"数据驱动UI\"],\"confidence\":0.95}"
                 },
                 "topics": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "primary_topic": "科技",
                         "subtopics": [
                             "AI工具"
                         ],
                         "content_intent": "经验分享",
-                        "content_type": "长文",
+                        "content_type": "教程清单",
                         "confidence": 0.9
                     },
-                    "raw": "{\"primary_topic\": \"科技\", \"subtopics\": [\"AI工具\"], \"content_intent\": \"经验分享\", \"content_type\": \"长文\", \"confidence\": 0.9}"
+                    "raw": "{\"version\":\"1.0\",\"primary_topic\":\"科技\",\"subtopics\":[\"AI工具\"],\"content_intent\":\"经验分享\",\"content_type\":\"教程清单\",\"confidence\":0.9}"
+                },
+                "entities_concepts": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "entities": {
+                            "people": [],
+                            "orgs": [],
+                            "products": [
+                                "shadcnUI",
+                                "Next.js",
+                                "Claude opus",
+                                "cursor",
+                                "windsurf",
+                                "augment cline"
+                            ],
+                            "locations": []
+                        },
+                        "concepts": [
+                            "vibe coding",
+                            "组件变体",
+                            "状态管理",
+                            "响应式交互",
+                            "数据驱动UI",
+                            "分层架构",
+                            "组合模式",
+                            "原子组件"
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"entities\":{\"people\":[],\"orgs\":[],\"products\":[\"shadcnUI\",\"Next.js\",\"Claude opus\",\"cursor\",\"windsurf\",\"augment cline\"],\"locations\":[]},\"concepts\":[\"vibe coding\",\"组件变体\",\"状态管理\",\"响应式交互\",\"数据驱动UI\",\"分层架构\",\"组合模式\",\"原子组件\"],\"confidence\":0.9}"
+                },
+                "takeaways": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "takeaways": [
+                            "shadcnUI官网通过组件变体组合、状态管理、响应式交互和数据驱动实现精致UI，而AI生成仅呈现基础组件缺乏交互细节",
+                            "解决方案是解析开源官网（Next.js框架）形成架构报告，让AI学习分层抽象、组合模式与最佳实践",
+                            "通过让AI参考完整页面示例和组件组合套路，可显著提升UI生成质量，避免简陋效果"
+                        ],
+                        "confidence": 0.95
+                    },
+                    "raw": "{\"version\":\"1.0\",\"takeaways\":[\"shadcnUI官网通过组件变体组合、状态管理、响应式交互和数据驱动实现精致UI，而AI生成仅呈现基础组件缺乏交互细节\",\"解决方案是解析开源官网（Next.js框架）形成架构报告，让AI学习分层抽象、组合模式与最佳实践\",\"通过让AI参考完整页面示例和组件组合套路，可显著提升UI生成质量，避免简陋效果\"],\"confidence\":0.95}"
+                },
+                "steps": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "steps": [
+                            {
+                                "step": 1,
+                                "action": "克隆shadcnUI官网最新v4版本（Next.js框架）并本地运行",
+                                "tip": "官网开源可直接获取完整项目结构和示例代码"
+                            },
+                            {
+                                "step": 2,
+                                "action": "使用AI工具（如Claude opus）解析工程文件生成架构报告",
+                                "tip": "可选用cursor/windsurf/augment cline等工具，重点分析组件变体组合和状态管理"
+                            },
+                            {
+                                "step": 3,
+                                "action": "让AI学习报告中的分层架构、组合模式及最佳实践",
+                                "tip": "需包含基础UI组件(41)、功能块组件(45)、图表组件(69)的全路径资源列表"
+                            },
+                            {
+                                "step": 4,
+                                "action": "提供完整页面示例和组合模式分析供AI参考",
+                                "tip": "重点学习数据驱动UI生成和响应式交互的实现方式"
+                            },
+                            {
+                                "step": 5,
+                                "action": "总结常见组件组合套路并让AI遵循官网品质标准",
+                                "tip": "强调分层抽象和组合优于继承的原则，避免仅使用基础组件"
+                            }
+                        ],
+                        "confidence": 0.9
+                    },
+                    "raw": "{\"version\":\"1.0\",\"steps\":[{\"step\":1,\"action\":\"克隆shadcnUI官网最新v4版本（Next.js框架）并本地运行\",\"tip\":\"官网开源可直接获取完整项目结构和示例代码\"},{\"step\":2,\"action\":\"使用AI工具（如Claude opus）解析工程文件生成架构报告\",\"tip\":\"可选用cursor/windsurf/augment cline等工具，重点分析组件变体组合和状态管理\"},{\"step\":3,\"action\":\"让AI学习报告中的分层架构、组合模式及最佳实践\",\"tip\":\"需包含基础UI组件(41)、功能块组件(45)、图表组件(69)的全路径资源列表\"},{\"step\":4,\"action\":\"提供完整页面示例和组合模式分析供AI参考\",\"tip\":\"重点学习数据驱动UI生成和响应式交互的实现方式\"},{\"step\":5,\"action\":\"总结常见组件组合套路并让AI遵循官网品质标准\",\"tip\":\"强调分层抽象和组合优于继承的原则，避免仅使用基础组件\"}],\"confidence\":0.9}"
                 }
             },
             "status": "ok",
             "summary": {
-                "summary_200": "文章分析了shadcnUI官网精致而AI直接生成组件简陋的原因：官网通过不同尺寸/位置/组合的组件变体、集中状态管理、响应式交互和数据驱动UI实现高品质，而AI缺乏交互思考且不遵循最佳实践。解决方案是拉取开源官网代码，用Claude等工具拆解工程形成报告（包含组件路径、分层架构、组合模式、完整示例），让AI基于报告学习官网的抽象模式、组合套路和数据驱动方法，从而提升生成UI的质量。",
-                "confidence": 0.9
+                "version": "1.0",
+                "summary_200": "分析shadcnUI官网与AI生成效果的差异：官网通过组件变体组合、状态管理、响应式交互及数据驱动实现精致UI，而AI仅呈现基础组件缺乏交互思考。解决方案是解析开源官网（Next.js框架）形成架构报告，让AI学习分层抽象、组合模式及最佳实践，从而提升生成质量。",
+                "confidence": 0.95
             },
             "keywords": {
+                "version": "1.0",
                 "keywords": [
                     "shadcnUI",
-                    "Claude",
                     "Next.js",
-                    "数据驱动UI",
-                    "组件变体"
+                    "Claude opus",
+                    "组件变体",
+                    "数据驱动UI"
                 ],
-                "confidence": 0.9
+                "confidence": 0.95
             },
             "topics": {
+                "version": "1.0",
                 "primary_topic": "科技",
                 "subtopics": [
                     "AI工具"
                 ],
                 "content_intent": "经验分享",
-                "content_type": "长文",
+                "content_type": "教程清单",
+                "confidence": 0.9
+            },
+            "takeaways": {
+                "version": "1.0",
+                "takeaways": [
+                    "shadcnUI官网通过组件变体组合、状态管理、响应式交互和数据驱动实现精致UI，而AI生成仅呈现基础组件缺乏交互细节",
+                    "解决方案是解析开源官网（Next.js框架）形成架构报告，让AI学习分层抽象、组合模式与最佳实践",
+                    "通过让AI参考完整页面示例和组件组合套路，可显著提升UI生成质量，避免简陋效果"
+                ],
+                "confidence": 0.95
+            },
+            "steps": {
+                "version": "1.0",
+                "steps": [
+                    {
+                        "step": 1,
+                        "action": "克隆shadcnUI官网最新v4版本（Next.js框架）并本地运行",
+                        "tip": "官网开源可直接获取完整项目结构和示例代码"
+                    },
+                    {
+                        "step": 2,
+                        "action": "使用AI工具（如Claude opus）解析工程文件生成架构报告",
+                        "tip": "可选用cursor/windsurf/augment cline等工具，重点分析组件变体组合和状态管理"
+                    },
+                    {
+                        "step": 3,
+                        "action": "让AI学习报告中的分层架构、组合模式及最佳实践",
+                        "tip": "需包含基础UI组件(41)、功能块组件(45)、图表组件(69)的全路径资源列表"
+                    },
+                    {
+                        "step": 4,
+                        "action": "提供完整页面示例和组合模式分析供AI参考",
+                        "tip": "重点学习数据驱动UI生成和响应式交互的实现方式"
+                    },
+                    {
+                        "step": 5,
+                        "action": "总结常见组件组合套路并让AI遵循官网品质标准",
+                        "tip": "强调分层抽象和组合优于继承的原则，避免仅使用基础组件"
+                    }
+                ],
                 "confidence": 0.9
             }
         },
@@ -536,14 +1120,16 @@
                 "summary": {
                     "ok": true,
                     "result": {
-                        "summary_200": "内容仅提及新工具Qoder的出现，暗示其可能替代Cursor和Trae等现有开发工具，但缺乏具体功能描述或比较细节。标签显示话题涉及个人开发、智能体、大模型和AI工具领域。",
-                        "confidence": 0.5
+                        "version": "1.0",
+                        "summary_200": "宣布从Cursor和Trae转向新工具Qoder，暗示其在智能体、大模型等AI开发工具领域的优势，适用于个人开发者和vibe coding场景。",
+                        "confidence": 0.7
                     },
-                    "raw": "{\"summary_200\": \"内容仅提及新工具Qoder的出现，暗示其可能替代Cursor和Trae等现有开发工具，但缺乏具体功能描述或比较细节。标签显示话题涉及个人开发、智能体、大模型和AI工具领域。\", \"confidence\": 0.5}"
+                    "raw": "{\"version\":\"1.0\",\"summary_200\":\"宣布从Cursor和Trae转向新工具Qoder，暗示其在智能体、大模型等AI开发工具领域的优势，适用于个人开发者和vibe coding场景。\", \"confidence\":0.7}"
                 },
                 "keywords": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "keywords": [
                             "Qoder",
                             "Cursor",
@@ -553,28 +1139,78 @@
                         ],
                         "confidence": 0.8
                     },
-                    "raw": "{\"keywords\":[\"Qoder\", \"Cursor\", \"Trae\", \"智能体\", \"大模型\"], \"confidence\": 0.8}"
+                    "raw": "{\"version\":\"1.0\",\"keywords\":[\"Qoder\",\"Cursor\",\"Trae\",\"智能体\",\"大模型\"],\"confidence\":0.8}"
                 },
                 "topics": {
                     "ok": true,
                     "result": {
+                        "version": "1.0",
                         "primary_topic": "科技",
                         "subtopics": [
                             "AI工具"
                         ],
-                        "content_intent": "新闻",
+                        "content_intent": "种草",
                         "content_type": "随笔",
                         "confidence": 0.7
                     },
-                    "raw": "{\"primary_topic\": \"科技\", \"subtopics\": [\"AI工具\"], \"content_intent\": \"新闻\", \"content_type\": \"随笔\", \"confidence\": 0.7}"
+                    "raw": "{\"version\":\"1.0\",\"primary_topic\":\"科技\",\"subtopics\":[\"AI工具\"],\"content_intent\":\"种草\",\"content_type\":\"随笔\",\"confidence\":0.7}"
+                },
+                "entities_concepts": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "entities": {
+                            "people": [],
+                            "orgs": [],
+                            "products": [
+                                "Cursor",
+                                "Trae",
+                                "Qoder"
+                            ],
+                            "locations": []
+                        },
+                        "concepts": [
+                            "个人开发者",
+                            "智能体",
+                            "大模型",
+                            "vibecoding"
+                        ],
+                        "confidence": 0.8
+                    },
+                    "raw": "{\"version\":\"1.0\",\"entities\":{\"people\":[],\"orgs\":[],\"products\":[\"Cursor\",\"Trae\",\"Qoder\"],\"locations\":[]},\"concepts\":[\"个人开发者\",\"智能体\",\"大模型\",\"vibecoding\"],\"confidence\":0.8}"
+                },
+                "takeaways": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "takeaways": [
+                            "宣布从Cursor和Trae转向新工具Qoder，暗示其在AI开发工具领域的性能优势",
+                            "Qoder针对智能体、大模型等开发场景优化，适用于个人开发者工作流",
+                            "工具特别支持vibe coding等现代开发模式，提升开发效率与体验"
+                        ],
+                        "confidence": 0.8
+                    },
+                    "raw": "{\"version\":\"1.0\",\"takeaways\":[\"宣布从Cursor和Trae转向新工具Qoder，暗示其在AI开发工具领域的性能优势\",\"Qoder针对智能体、大模型等开发场景优化，适用于个人开发者工作流\",\"工具特别支持vibe coding等现代开发模式，提升开发效率与体验\"],\"confidence\":0.8}"
+                },
+                "steps": {
+                    "ok": true,
+                    "result": {
+                        "version": "1.0",
+                        "steps": [],
+                        "confidence": null,
+                        "not_applicable": true,
+                        "reason": "not tutorial"
+                    }
                 }
             },
             "status": "ok",
             "summary": {
-                "summary_200": "内容仅提及新工具Qoder的出现，暗示其可能替代Cursor和Trae等现有开发工具，但缺乏具体功能描述或比较细节。标签显示话题涉及个人开发、智能体、大模型和AI工具领域。",
-                "confidence": 0.5
+                "version": "1.0",
+                "summary_200": "宣布从Cursor和Trae转向新工具Qoder，暗示其在智能体、大模型等AI开发工具领域的优势，适用于个人开发者和vibe coding场景。",
+                "confidence": 0.7
             },
             "keywords": {
+                "version": "1.0",
                 "keywords": [
                     "Qoder",
                     "Cursor",
@@ -585,13 +1221,23 @@
                 "confidence": 0.8
             },
             "topics": {
+                "version": "1.0",
                 "primary_topic": "科技",
                 "subtopics": [
                     "AI工具"
                 ],
-                "content_intent": "新闻",
+                "content_intent": "种草",
                 "content_type": "随笔",
                 "confidence": 0.7
+            },
+            "takeaways": {
+                "version": "1.0",
+                "takeaways": [
+                    "宣布从Cursor和Trae转向新工具Qoder，暗示其在AI开发工具领域的性能优势",
+                    "Qoder针对智能体、大模型等开发场景优化，适用于个人开发者工作流",
+                    "工具特别支持vibe coding等现代开发模式，提升开发效率与体验"
+                ],
+                "confidence": 0.8
             }
         }
     ]

@@ -1,5 +1,6 @@
 import { readFileSync, existsSync } from 'node:fs'
 import { resolve } from 'node:path'
+import { defineEventHandler, createError, getRouterParam } from 'h3'
 
 function readJson<T = any>(p: string): T | null {
   try {
@@ -21,7 +22,12 @@ function resolveDataPath(rel: string) {
   return p1
 }
 
-export default defineEventHandler(() => {
+export default defineEventHandler((event) => {
+  const id = getRouterParam(event, 'id')
+  if (!id) {
+    throw createError({ statusCode: 400, statusMessage: 'Missing id' })
+  }
+
   const detailsPath = resolveDataPath('favorite_notes_details.json')
   const aiPath = resolveDataPath('favorite_notes_ai_processed.json')
   const normalizedPath = resolveDataPath('favorite_notes_normalized.json')
@@ -34,8 +40,8 @@ export default defineEventHandler(() => {
   const aiMap = new Map<string, any>()
   if (Array.isArray(aiArray)) {
     for (const item of aiArray) {
-      const id = item?.note_id
-      if (id) aiMap.set(id, item)
+      const nid = item?.note_id
+      if (nid) aiMap.set(nid, item)
     }
   }
 
@@ -50,55 +56,55 @@ export default defineEventHandler(() => {
     }
   }
 
-  const enriched = ((details as any)?.data || []).map((note: any) => {
-    const ai = aiMap.get(note.id)
+  const note = ((details as any)?.data || []).find((n: any) => n?.id === id)
+  if (!note) {
+    throw createError({ statusCode: 404, statusMessage: 'Note not found' })
+  }
 
-    let summaryText: string | undefined
-    let keywordsArr: string[] | undefined
-    let topicsObj: any | undefined
+  const ai = aiMap.get(id)
+  let summaryText: string | undefined
+  let keywordsArr: string[] | undefined
+  let topicsObj: any | undefined
 
-    if (ai) {
-      // summary
-      summaryText = ai?.summary?.summary_200
-        || ai?.tasks?.summary?.result?.summary_200
-      // keywords
-      keywordsArr = ai?.keywords?.keywords
-        || ai?.tasks?.keywords?.result?.keywords
-      // topics
-      topicsObj = ai?.topics
-        || ai?.tasks?.topics?.result
+  if (ai) {
+    // summary
+    summaryText = ai?.summary?.summary_200
+      || ai?.tasks?.summary?.result?.summary_200
+    // keywords
+    keywordsArr = ai?.keywords?.keywords
+      || ai?.tasks?.keywords?.result?.keywords
+    // topics
+    topicsObj = ai?.topics
+      || ai?.tasks?.topics?.result
+  }
+
+  const out: any = { ...note }
+
+  if (summaryText || (keywordsArr && keywordsArr.length)) {
+    out.ai_summary = {
+      summary: summaryText || '',
+      keywords: Array.isArray(keywordsArr) ? keywordsArr : [],
     }
+  }
 
-    const out: any = { ...note }
-
-    if (summaryText || (keywordsArr && keywordsArr.length)) {
-      out.ai_summary = {
-        summary: summaryText || '',
-        keywords: Array.isArray(keywordsArr) ? keywordsArr : [],
-      }
+  if (topicsObj && typeof topicsObj === 'object') {
+    out.ai_topics = {
+      primary_topic: topicsObj.primary_topic,
+      subtopics: topicsObj.subtopics || [],
+      content_intent: topicsObj.content_intent,
+      content_type: topicsObj.content_type,
+      confidence: topicsObj.confidence,
     }
+  }
 
-    if (topicsObj && typeof topicsObj === 'object') {
-      out.ai_topics = {
-        primary_topic: topicsObj.primary_topic,
-        subtopics: topicsObj.subtopics || [],
-        content_intent: topicsObj.content_intent,
-        content_type: topicsObj.content_type,
-        confidence: topicsObj.confidence,
-      }
+  // inject author_link if available
+  const aLink = authorLinkMap.get(id)
+  if (aLink) {
+    out.author_info = {
+      ...out.author_info,
+      author_link: aLink,
     }
+  }
 
-    // inject author_link if available
-    const aLink = authorLinkMap.get(note.id)
-    if (aLink) {
-      out.author_info = {
-        ...out.author_info,
-        author_link: aLink,
-      }
-    }
-
-    return out
-  })
-
-  return enriched
+  return out
 })

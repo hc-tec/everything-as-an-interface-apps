@@ -28,10 +28,13 @@ RPC_WEBHOOK_PORT = 0
 COOKIE_IDS = [
     "819969a2-9e59-46f5-b0ca-df2116d9c2a0"
 ]
-CONV_ID = "3df6b8e0-5ddc-444a-be11-a866b8342a39"
+CONV_ID = "5b8eaf83-fcc7-4579-a61d-c5987a7a2603"
 
 # 每5s进入下一个笔记
 AI_INTERVAL_SEC = 5
+
+# 任务结果版本
+TASK_VERSION = "1.0"
 
 # ----------------------
 # Utilities
@@ -94,7 +97,7 @@ def build_prompt_summary(title: str, desc: str, tags_joined: str) -> str:
         "你是内容摘要助手。给定【标题】【正文】【标签】："
         "- 若正文充分，以正文为主。"
         "- 若正文稀缺，仅基于标题与标签；禁止虚构细节。"
-        "- 摘要≤200字。输出JSON：{\"summary_200\":\"...\", \"confidence\":0~1}"
+        "- 摘要≤200字。仅输出JSON：{" + f'"version":"{TASK_VERSION}",' + "\"summary_200\":\"...\", \"confidence\":0~1}"
         f"【标题】{title}"
         f"【正文】{desc}"
         f"【标签】{tags_joined}"
@@ -103,9 +106,9 @@ def build_prompt_summary(title: str, desc: str, tags_joined: str) -> str:
 
 def build_prompt_keywords(title: str, content_for_keywords: str) -> str:
     return (
-        "基于给定内容，提取3-5个名词类关键词（专有名词优先）。输出JSON："
-        '{"keywords":["...","..."], "confidence":0~1}'
-        "内容："
+        "基于给定内容，提取3-5个名词类关键词（专有名词优先）。仅输出JSON："
+        + "{" + f'"version":"{TASK_VERSION}",' + '"keywords":["...","..."], "confidence":0~1}'
+        + "内容："
         f"{title}{content_for_keywords}"
     )
 
@@ -113,14 +116,43 @@ def build_prompt_keywords(title: str, content_for_keywords: str) -> str:
 def build_prompt_topics(title: str, desc: str, tags_joined: str) -> str:
     return (
         "从内容中判定 primary_topic、subtopics、content_intent、content_type。"
-        "必须从给定词表中选择，输出JSON（多余字段不要）："
-        '{"primary_topic":"…","subtopics":["…"],"content_intent":"…","content_type":"…","confidence":0~1}'
-        "词表："
+        "必须从给定词表中选择，且仅输出JSON（多余字段不要）："
+        + "{" + f'"version":"{TASK_VERSION}",' + '"primary_topic":"…","subtopics":["…"],"content_intent":"…","content_type":"…","confidence":0~1}'
+        + "词表："
         "primary_topic: [AI工具, 穿搭, 旅行, 健身, 理财, 摄影, 美食, 教育, 职场, 心理, 家居, 亲子, 宠物, 影视, 游戏, 科技]"
         "content_intent: [教程, 经验分享, 测评, 种草, 记录, 新闻, 活动, 招聘, 广告]"
         "content_type: [图文, 长文, 短视频, 教程清单, 测评对比, 随笔]"
         "内容："
         f"{title}{desc}{tags_joined}"
+    )
+
+
+def build_prompt_takeaways(title: str, desc_or_summary: str) -> str:
+    return (
+        "L2.3 要点清单：提炼最多3条一句话要点（面向复盘），避免重复。"
+        "仅输出JSON：{" + f'"version":"{TASK_VERSION}",' + "\"takeaways\":[\"…\",\"…\"], \"confidence\":0~1}"
+        "内容："
+        f"{title}{desc_or_summary}"
+    )
+
+
+def build_prompt_steps(title: str, desc: str) -> str:
+    return (
+        "L2.4 步骤抽取（仅教程/攻略触发）：如果内容是教程/攻略，抽取2-7步。"
+        "每步包含 step(数字从1开始)、action（一句话）、可选 tip。"
+        "仅输出JSON：{" + f'"version":"{TASK_VERSION}",' + "\"steps\":[{\"step\":1,\"action\":\"…\",\"tip\":\"…\"}], \"confidence\":0~1}"
+        "内容："
+        f"{title}{desc}"
+    )
+
+
+def build_prompt_entities_concepts(title: str, desc: str, tags_joined: str) -> str:
+    return (
+        "L2.2 实体与概念抽取（NER+概念）：识别人名、机构名、产品名、地名，并提炼关键概念。"
+        "要求：不要虚构；不存在则输出空数组；实体去重；使用原文语言。仅输出JSON："
+        + "{" + f'"version":"{TASK_VERSION}",' + '"entities":{"people":[],"orgs":[],"products":[],"locations":[]},"concepts":[],"confidence":0~1}'
+        + "输入："
+        f"【标题】{title}【正文】{desc}【标签】{tags_joined}"
     )
 
 
@@ -194,14 +226,14 @@ def _merge_note_result_into_state(state: Dict[str, Any], note_result: Dict[str, 
 class Task:
     name: str
 
-    def prompt(self, normalized: dict) -> str:
+    def prompt(self, normalized: dict, context: Dict[str, Any]) -> str:
         raise NotImplementedError
 
     def parse_and_validate(self, model_text: str) -> Dict[str, Any]:
         raise NotImplementedError
 
-    async def run(self, client: EAIRPCClient, normalized: dict) -> Dict[str, Any]:
-        p = self.prompt(normalized)
+    async def run(self, client: EAIRPCClient, normalized: dict, context: Dict[str, Any]) -> Dict[str, Any]:
+        p = self.prompt(normalized, context)
         try:
             chat_result = await client.chat_with_yuanbao(
                 ask_question=p,
@@ -233,7 +265,7 @@ class Task:
 class SummaryTask(Task):
     name = "summary"
 
-    def prompt(self, normalized: dict) -> str:
+    def prompt(self, normalized: dict, context: Dict[str, Any]) -> str:
         title = _clean_text((normalized or {}).get("title"))
         desc = _clean_text((normalized or {}).get("desc"))
         tags_joined = _join_tags((normalized or {}).get("tags") or [])
@@ -246,13 +278,13 @@ class SummaryTask(Task):
         if "summary_200" not in data or not isinstance(data["summary_200"], str):
             raise ValueError("summary: missing summary_200")
         # confidence 可选
-        return {"summary_200": data["summary_200"], "confidence": data.get("confidence")}
+        return {"version": TASK_VERSION, "summary_200": data["summary_200"], "confidence": data.get("confidence")}
 
 
 class KeywordsTask(Task):
     name = "keywords"
 
-    def prompt(self, normalized: dict) -> str:
+    def prompt(self, normalized: dict, context: Dict[str, Any]) -> str:
         title = _clean_text((normalized or {}).get("title"))
         desc = _clean_text((normalized or {}).get("desc"))
         tags = (normalized or {}).get("tags") or []
@@ -267,7 +299,7 @@ class KeywordsTask(Task):
         kws = data.get("keywords")
         if not isinstance(kws, list) or not all(isinstance(x, str) for x in kws):
             raise ValueError("keywords: missing or invalid keywords array")
-        return {"keywords": kws, "confidence": data.get("confidence")}
+        return {"version": TASK_VERSION, "keywords": kws, "confidence": data.get("confidence")}
 
 
 class TopicsTask(Task):
@@ -277,7 +309,7 @@ class TopicsTask(Task):
     ALLOWED_INTENT = ["教程", "经验分享", "测评", "种草", "记录", "新闻", "活动", "招聘", "广告"]
     ALLOWED_TYPE = ["图文", "长文", "短视频", "教程清单", "测评对比", "随笔"]
 
-    def prompt(self, normalized: dict) -> str:
+    def prompt(self, normalized: dict, context: Dict[str, Any]) -> str:
         title = _clean_text((normalized or {}).get("title"))
         desc = _clean_text((normalized or {}).get("desc"))
         tags_joined = _join_tags((normalized or {}).get("tags") or [])
@@ -300,6 +332,7 @@ class TopicsTask(Task):
         if data["content_type"] not in self.ALLOWED_TYPE:
             raise ValueError("topics: content_type not in allowed list")
         return {
+            "version": TASK_VERSION,
             "primary_topic": data["primary_topic"],
             "subtopics": data["subtopics"],
             "content_intent": data["content_intent"],
@@ -308,8 +341,126 @@ class TopicsTask(Task):
         }
 
 
+class TakeawaysTask(Task):
+    name = "takeaways"
+
+    def prompt(self, normalized: dict, context: Dict[str, Any]) -> str:
+        title = _clean_text((normalized or {}).get("title"))
+        desc = _clean_text((normalized or {}).get("desc"))
+        # 优先使用已产出的摘要
+        summary_ok = (
+            (context.get("tasks") or {}).get("summary") or {}
+        )
+        if summary_ok.get("ok") and isinstance(summary_ok.get("result"), dict):
+            s = summary_ok["result"].get("summary_200")
+            if isinstance(s, str) and s.strip():
+                desc_or_summary = s
+            else:
+                desc_or_summary = desc
+        else:
+            desc_or_summary = desc
+        return build_prompt_takeaways(title, _clean_text(desc_or_summary))
+
+    def parse_and_validate(self, model_text: str) -> Dict[str, Any]:
+        data = _extract_json_from_text(model_text)
+        if not isinstance(data, dict):
+            raise ValueError("takeaways: invalid JSON")
+        arr = data.get("takeaways")
+        if not isinstance(arr, list) or not all(isinstance(x, str) and x.strip() for x in arr):
+            raise ValueError("takeaways: missing or invalid takeaways array")
+        if len(arr) > 3:
+            raise ValueError("takeaways: takeaways must be at most 3 items")
+        return {"version": TASK_VERSION, "takeaways": arr, "confidence": data.get("confidence")}
+
+
+class StepsTask(Task):
+    name = "steps"
+
+    def prompt(self, normalized: dict, context: Dict[str, Any]) -> str:
+        title = _clean_text((normalized or {}).get("title"))
+        desc = _clean_text((normalized or {}).get("desc"))
+        return build_prompt_steps(title, desc)
+
+    async def run(self, client: EAIRPCClient, normalized: dict, context: Dict[str, Any]) -> Dict[str, Any]:
+        # 仅教程/攻略触发：依赖 topics 任务的结果
+        topics_state = (context.get("tasks") or {}).get("topics") or {}
+        if not topics_state.get("ok"):
+            # 没有 topics 或失败则不触发，不作为失败计入
+            return {"ok": True, "result": {"version": TASK_VERSION, "steps": [], "confidence": None, "not_applicable": True, "reason": "topics not available"}}
+        topics_res = topics_state.get("result") or {}
+        content_intent = topics_res.get("content_intent")
+        content_type = topics_res.get("content_type")
+        is_tutorial = (content_intent == "教程") or (content_type == "教程清单")
+        if not is_tutorial:
+            return {"ok": True, "result": {"version": TASK_VERSION, "steps": [], "confidence": None, "not_applicable": True, "reason": "not tutorial"}}
+        # 满足条件才真正调用模型
+        return await super().run(client, normalized, context)
+
+    def parse_and_validate(self, model_text: str) -> Dict[str, Any]:
+        data = _extract_json_from_text(model_text)
+        if not isinstance(data, dict):
+            raise ValueError("steps: invalid JSON")
+        steps = data.get("steps")
+        if not isinstance(steps, list):
+            raise ValueError("steps: steps must be a list")
+        if not (2 <= len(steps) <= 7):
+            raise ValueError("steps: steps length must be between 2 and 7")
+        for i, st in enumerate(steps, start=1):
+            if not isinstance(st, dict):
+                raise ValueError(f"steps: step[{i}] must be an object")
+            if "action" not in st or not isinstance(st["action"], str) or not st["action"].strip():
+                raise ValueError(f"steps: step[{i}] missing action")
+            if "step" not in st or not isinstance(st["step"], int):
+                raise ValueError(f"steps: step[{i}] missing step number")
+        return {"version": TASK_VERSION, "steps": steps, "confidence": data.get("confidence")}
+
+
+class EntitiesConceptsTask(Task):
+    name = "entities_concepts"
+
+    def prompt(self, normalized: dict, context: Dict[str, Any]) -> str:
+        title = _clean_text((normalized or {}).get("title"))
+        desc = _clean_text((normalized or {}).get("desc"))
+        tags_joined = _join_tags((normalized or {}).get("tags") or [])
+        return build_prompt_entities_concepts(title, desc, tags_joined)
+
+    def parse_and_validate(self, model_text: str) -> Dict[str, Any]:
+        data = _extract_json_from_text(model_text)
+        if not isinstance(data, dict):
+            raise ValueError("entities_concepts: invalid JSON")
+        entities = data.get("entities")
+        if not isinstance(entities, dict):
+            raise ValueError("entities_concepts: entities must be an object")
+        def _ensure_str_list(v: Any) -> List[str]:
+            if v is None:
+                return []
+            if isinstance(v, list) and all(isinstance(x, str) for x in v):
+                return v
+            raise ValueError("entities_concepts: entity arrays must be list[str]")
+        people = _ensure_str_list(entities.get("people"))
+        orgs = _ensure_str_list(entities.get("orgs"))
+        products = _ensure_str_list(entities.get("products"))
+        locations = _ensure_str_list(entities.get("locations"))
+        concepts = data.get("concepts")
+        if concepts is None:
+            concepts = []
+        if not (isinstance(concepts, list) and all(isinstance(x, str) for x in concepts)):
+            raise ValueError("entities_concepts: concepts must be list[str]")
+        return {
+            "version": TASK_VERSION,
+            "entities": {
+                "people": people,
+                "orgs": orgs,
+                "products": products,
+                "locations": locations,
+            },
+            "concepts": concepts,
+            "confidence": data.get("confidence"),
+        }
+
+
 # Registry of tasks (extensible)
-TASKS: List[Task] = [SummaryTask(), KeywordsTask(), TopicsTask()]
+TASKS: List[Task] = [SummaryTask(), KeywordsTask(), TopicsTask(), EntitiesConceptsTask(), TakeawaysTask(), StepsTask()]
 
 
 # ----------------------
@@ -328,8 +479,8 @@ async def process_one_note(client: EAIRPCClient, normalized_item: dict, existing
         task_state = (note_result.get("tasks") or {}).get(task.name)
         if task_state and task_state.get("ok") and not REPROCESS_EXISTING:
             continue
-        # 运行任务
-        res = await task.run(client, norm)
+        # 运行任务（传入上下文以便任务间协同）
+        res = await task.run(client, norm, note_result)
         # 写入任务结果
         note_result.setdefault("tasks", {})[task.name] = res
         # 失败则写一条失败日志（但不中断其他任务）
@@ -353,13 +504,20 @@ async def process_one_note(client: EAIRPCClient, normalized_item: dict, existing
         status = "failed"
     note_result["status"] = status
 
-    # 兼容：拍平成功任务（summary/keywords/topics）以兼容后续可能的消费端
+    # 兼容：拍平成功任务（summary/keywords/topics/takeaways/steps）以兼容后续可能的消费端
     if note_result["tasks"].get("summary", {}).get("ok"):
         note_result["summary"] = note_result["tasks"]["summary"]["result"]
     if note_result["tasks"].get("keywords", {}).get("ok"):
         note_result["keywords"] = note_result["tasks"]["keywords"]["result"]
     if note_result["tasks"].get("topics", {}).get("ok"):
         note_result["topics"] = note_result["tasks"]["topics"]["result"]
+    if note_result["tasks"].get("takeaways", {}).get("ok"):
+        note_result["takeaways"] = note_result["tasks"]["takeaways"]["result"]
+    if note_result["tasks"].get("steps", {}).get("ok"):
+        steps_res = note_result["tasks"]["steps"]["result"] or {}
+        # 仅当实际有步骤时才拍平
+        if isinstance(steps_res, dict) and isinstance(steps_res.get("steps"), list) and len(steps_res.get("steps")) > 0:
+            note_result["steps"] = steps_res
 
     return note_result
 

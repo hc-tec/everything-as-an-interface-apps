@@ -3,6 +3,7 @@ export interface AuthorInfo {
   username: string
   avatar: string
   xsec_token: string
+  author_link?: string
 }
 
 export interface NoteStatistics {
@@ -22,6 +23,14 @@ export interface AiSummary {
   keywords: string[]
 }
 
+export interface AiTopics {
+  primary_topic: string
+  subtopics: string[]
+  content_intent: string
+  content_type: string
+  confidence?: number
+}
+
 export interface NoteDetailsItem {
   id: string
   title: string
@@ -35,6 +44,7 @@ export interface NoteDetailsItem {
   images: string[] | null
   video: VideoInfo | null
   timestamp: string
-  ai_summary: AiSummary
+  ai_summary?: AiSummary
+  ai_topics?: AiTopics
   platform?: string // Added platform as it was in the user request but not in the json
 }
