@@ -2,6 +2,7 @@
 import asyncio
 import json
 
+from client_sdk.params import TaskParams, ServiceParams
 from client_sdk.rpc_client import EAIRPCClient
 import os
 from utils.file_utils import read_json_with_project_root, write_json_with_project_root, PROJECT_ROOT
@@ -22,7 +23,7 @@ def init_file():
 
 init_file()
 
-async def get_details(client, brief_notes_results):
+async def get_details(client: EAIRPCClient, brief_notes_results):
     if brief_notes_results.get("count", -1) <= 0:
         print(f"brief_notes_results无数据，也可能出错：{brief_notes_results.get('error', None)}")
         return
@@ -39,21 +40,24 @@ async def get_details(client, brief_notes_results):
     # 返回值中包含笔记详情数据以及获取失败的笔记数据
     details_notes_res = await client.get_notes_details_from_xhs(
         brief_data=json.dumps(brief_data),
-        max_items=10,
-        max_seconds=10 ** 9,
-        max_new_items=10,
-        max_idle_rounds=999,
         wait_time_sec=10,  # 两次笔记详情获取时间间隔10s
+        task_params=TaskParams(
+            cookie_ids=["28ba44f1-bb67-41ab-86f0-a3d049d902aa"],
+            close_page_when_task_finished=True,
+        ),
+        service_params=ServiceParams(
+            max_items=10,
+            max_seconds=10 ** 9,
+            max_idle_rounds=999,
+        ),
         rpc_timeout_sec=9999,
-        cookie_ids=["28ba44f1-bb67-41ab-86f0-a3d049d902aa"],
-        close_page_when_task_finished=True,
     )
 
     if not details_notes_res["success"]:
         print(f"[get_notes_details_from_xhs]执行失败：{details_notes_res['error']}")
         return
 
-    print(f"[get_notes_details_from_xhs]执行成功，耗时：{details_notes_res.get("exec_elapsed_ms", "null")}ms")
+    print(f"[get_notes_details_from_xhs]执行成功，耗时：{details_notes_res.get('exec_elapsed_ms', 'null')}ms")
 
     # 获取到现有的笔记详情数据
     details_data = read_json_with_project_root(notes_details_rela_file)

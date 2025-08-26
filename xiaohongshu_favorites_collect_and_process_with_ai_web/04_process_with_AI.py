@@ -3,6 +3,7 @@ import json
 import re
 from typing import Any, Dict, List, Optional
 
+from client_sdk.params import TaskParams
 from client_sdk.rpc_client import EAIRPCClient  # type: ignore
 from utils.file_utils import read_json_with_project_root, write_json_with_project_root, PROJECT_ROOT
 
@@ -23,7 +24,7 @@ RPC_API_KEY = "testkey"
 RPC_WEBHOOK_HOST = "127.0.0.1"
 RPC_WEBHOOK_PORT = 0
 
-# Yuanbao chat config
+# Yuanbao chat params
 COOKIE_IDS = [
     "819969a2-9e59-46f5-b0ca-df2116d9c2a0"
 ]
@@ -204,9 +205,11 @@ class Task:
         try:
             chat_result = await client.chat_with_yuanbao(
                 ask_question=p,
-                cookie_ids=COOKIE_IDS,
                 conversation_id=CONV_ID,
-                close_page_when_task_finished=True,
+                task_params=TaskParams(
+                    cookie_ids=COOKIE_IDS,
+                    close_page_when_task_finished=True,
+                ),
             )
             data = chat_result.get("data") if isinstance(chat_result, dict) else None
             if not (isinstance(data, list) and data and isinstance(data[0], dict)):

@@ -3,6 +3,7 @@ import asyncio
 import json
 import os
 
+from client_sdk.params import TaskParams, ServiceParams, SyncParams
 from client_sdk.rpc_client import EAIRPCClient
 from utils.file_utils import read_json_with_project_root, write_json_with_project_root, PROJECT_ROOT
 
@@ -37,21 +38,25 @@ async def main():
         # storage_file会保存完整数据（包含之前数据以及上面两者）
         results = await client.get_favorite_notes_brief_from_xhs(
             storage_data=json.dumps(notes),
-            max_items=10,
-            max_seconds=10**9,
-            max_new_items=10,
-            cookie_ids=["28ba44f1-bb67-41ab-86f0-a3d049d902aa"],
-            close_page_when_task_finished=True,
+            task_params=TaskParams(
+                cookie_ids=["28ba44f1-bb67-41ab-86f0-a3d049d902aa"],
+                close_page_when_task_finished=True,
+            ),
+            service_params=ServiceParams(
+                max_items=10,
+                max_seconds=10 ** 9,
+            ),
+            sync_params=SyncParams(
+                max_new_items=10,
+            )
         )
         if not results["success"]:
             print(f"[get_favorite_notes_brief_from_xhs]执行失败：{results['error']}")
             return
 
-        print(f"[get_favorite_notes_brief_from_xhs]执行成功，耗时：{results.get("exec_elapsed_ms", "null")}ms")
+        print(f"[get_favorite_notes_brief_from_xhs]执行成功，耗时：{results.get('exec_elapsed_ms', 'null')}ms")
 
-        # 全量笔记保存到本地
-        with open(storage_abs_path, "w", encoding="utf-8") as f:
-            json.dump(results, f, ensure_ascii=False, indent=4)
+        write_json_with_project_root(storage_rela_path, results)
 
     except Exception as e:
         print(f"❌ 错误: {e}")
