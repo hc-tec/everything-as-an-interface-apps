@@ -1,0 +1,872 @@
+{
+  "1040g2sg31l2mrlqg2osg5nph1vag97fldd8ptdg!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2osg5nph1vag97fldd8ptdg!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 1124,
+    "success": true,
+    "data": {
+      "text": "Level1\nJSON\nTSON\nEPISODES\nDocuments\nConversations\nJSONs\nRaw data\nLevel 2\nEntities &\nENTITIES\nAlice\nBob\nrelationships\nI\nLevel 3\nCOMMUNITIES\nClusters &\ntheir summaries\n随着时间的推移，你会对Alice的络有更泛的了解——她在智能的专业知识、像Bob\n这样的人脉以及与谷歌和斯坦福大学的联系。\nZep通过将相关实体分组到社区中来反映这一点，从而提供了Alice专业概况的汇总视图。\n除此之外，它还保持着时间结构。\nzep\nzep\nzep\ndzep\nMemory\nMemory\nMemory\nMemory\ntemporal\nstructure\n例如，如果Alice说“我于2023年转到了Meta”，Zep不会覆盖之前关于Google的事实。相反，它\n会更新知识图谱，以时间戳的形式反映这两个状态：\nAliceWORKS_ATGoogle（有效期:2020-2023）\nAlice WORKS_ATMeta(有效期：2023年至今）\n这种双时间方法允许Zep保留事件的时间线（时间顺序）和数据提取的顺序（交易顺序）。\n因此，与MemGPT等具相，Zep针对AI代理的内存设计可将准确率提18.5%，并将延迟降低\n90%。",
+      "confidence": {
+        "avg_confidence": 0.9654195755720139
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2osg5nph1vag97fldd8ptdg!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "c0ec45c3-5df3-439f-971b-0ccac3a09fc1"
+  },
+  "1040g2sg31l2mrlqg2ou05nph1vag97flj3416jo!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2ou05nph1vag97flj3416jo!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 568,
+    "success": true,
+    "data": {
+      "text": "zep\n开源地址：https://github.com/getzep/zep\npaper地址:https://arxiv.org/abs/2501.13956\n官网：https://help.getzep.com/overview\nref:https://blog.dailydoseofds.com/p/build-human-like-memory-for-your\nAgentic和RAG系统通常难以实现实时知识更新和快速数据检索。\n今天，让我们讨论一一种有趣的时间感知知识图谱架构来解决这个问题。",
+      "confidence": {
+        "avg_confidence": 0.9747576372964042
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2ou05nph1vag97flj3416jo!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "8b9d7626-9c1b-4339-bab2-8aef1f26df00"
+  },
+  "1040g2sg31l2mrlqg2ov05nph1vag97fl2v3m89o!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2ov05nph1vag97fl2v3m89o!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 861,
+    "success": true,
+    "data": {
+      "text": "然而，现实世界中的一些企业应用程序要求更多。\nAI代理需要：\n来自现场对话的实时更新。\n一种能够连接历史和当前背景的记忆架构。\n当新数据到达时解决冲突和验证事实的能力。\nZep的解决方案\n本文通过提出一种持续学习、分层和时间感知的知识图谱来解决这个问题。\n可以将其视为人工智能代理的人类记忆。\n下图解释了代理的内存组件：\nHuman-like Memory for Agents\njoin.DailyDoseofDS.com\nAgent\n1\n2\nhas access to\nhas access to\nTools\nLLM\nI has access to\nzep\n8\n3\nMemory\nLevel 1\nTSON\nJSON\nEPISODES\nDocuments\nConversations\nJSONs\nRaw data\nLevel 2\nEntities &\nAlice\nENTITIES\nBob\nrelationships\nLevel 3\nClusters &\nCOMMUNITIES\ntheir summaries",
+      "confidence": {
+        "avg_confidence": 0.9719953217157503
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2ov05nph1vag97fl2v3m89o!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "2a9d050b-6454-44ef-8a3f-2a726e43be05"
+  },
+  "1040g2sg31l2mrlqg2p0g5nph1vag97flmdge8r8!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2p0g5nph1vag97flmdge8r8!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 928,
+    "success": true,
+    "data": {
+      "text": "记忆结构有三个关键层：\n情景记忆：存储档、对话、JSON等原始数据，确保不会丢失任何信息。\n语义记忆：提取实体和关系，形成像“Alice WORKS_ATGoogle”这样的联系。\n社区记忆：将相关实体分组成集群，以提供高级概览，例如总结Alice的专业络的社区。\n这与类记忆的关系如下:\n想想我们是如何处理对话的。\n想象下，爱丽丝告诉你，“我于2020年开始在歌作，去年与鲍勃合作了个智能项，并\n从斯坦福大学毕业。\n9\n1）情景记忆：\nLevel1\nJSON\nJSON\nRaw data\nEPISODES\nDocuments\nConversations\nJSONs\n您存储原始对话，包括爱丽丝的话语和对话发生的场景。\n2)语义记忆:\nLevel1\nJSON\nJSON\nJSONs\nRaw data\nDocuments\nConversations\nEPISODES\nLevel 2\nEntities &\nAlice\nBob\nrelationships\nENTITIES\n从爱丽丝的话中，你可以提取出以下关键事实：\n\"Alice在 Google工作。”\n“Alice将于2023年与Bob合作开展一个AI项目。\n93\n“爱丽丝从斯坦福大学毕业。\n”7\n类似地，Zep的方法处理情景数据，提取实体和关系，并将它们作为“语义边”存储在知识图谱\n中。\n3）社区记忆：",
+      "confidence": {
+        "avg_confidence": 0.9328769292942313
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2p0g5nph1vag97flmdge8r8!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "1f504a55-5c33-48f5-8960-654782ef9bb2"
+  },
+  "1040g2sg31l2mrlqg2p1g5nph1vag97fl5t9e80g!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2p1g5nph1vag97fl5t9e80g!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 1294,
+    "success": true,
+    "data": {
+      "text": "ZEP:ATEMPORALKNOWLEDGEGRAPHARCHITECTUREFOR\nAGENT MEMORY\nPreston Rasmussen\nPavlo Paliychuk\nTravis Beauvais\nJack Ryan\nZep AI\nZep AI\nZep AI\nZep AI\npreston@getzep.com\npaul@getzep.com\ntravis@getzep.com\njack@getzep.com\nDaniel Chalef\nZep AI\ndaniel@getzep.com\nABSTRACT\nWe introduce Zep,a novel memory layer service for AI agents that outperforms the current state-of-\nthe-art system, MemGPT, in the Deep Memory Retrieval (DMR) benchmark.Additionally, Zep excels\nin more comprehensive and challenging evaluations than DMR that better reflectreal-world enterprise\nusecases.Whileexistingretrieval-augmented generation(RAG)frameworks for largelanguage\nmodel (LLM)-based agents are limited to static document retrieval,enterpriseapplications demand\ndynamicknowledge integrationfromdiverse sources includingongoingconversationsand business\ndata. Zep addresses this fundamental limitation through its core component Graphiti—a temporally-\naware knowledgegraph engine that dynamicallysynthesizesboth unstructuredconversational data\nand structured business data while maintaining historicalrelationships.In the DMRbenchmark,\nwhichtheMemGPTteamestablished as their primaryevaluationmetric,Zep demonstrates superior\nperformance(94.8%vs93.4%).Beyond DMR,Zep's capabilities arefurthervalidatedthrough\nthe more challenging LongMemEval benchmark,which better reflects enterprise use cases through\ncomplex temporal reasoning tasks.In this evaluation,Zep achieves substantial results with accuracy\nimprovements ofup to18.5%while simultaneouslyreducing response latency by 90% compared\nto baseline implementations. These results are particularly pronounced in enterprise-critical tasks\nsuch as cross-session information synthesisand long-term contextmaintenance,demonstrating Zep's\neffectiveness for deployment in real-worldapplications.\n简而言之，Zep的AI代理记忆系统优于几种传统方法，准确率提高高达18.5%，延迟降低90%。\nMemory\nModel\nScore\nLatency\nLatency IQR\nAvg Context Tokens\nFull-context\ngpt-4o-mini\n55.4%\n31.3 s\n8.76s\n115k\nZep\ngpt-4o-mini\n63.8%\n3.20 s\n1.31s\n1.6k\nFull-context\ngpt-4o\n60.2%\n28.9s\n6.01s\n115k\nZep\ngpt-4o\n71.2%\n2.58s\n0.684s\n1.6k\n让我们开始吧！\n挑战\n在典型的LLM系统（如RAG）中检索静态档通常就够了:",
+      "confidence": {
+        "avg_confidence": 0.976360659668411
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2p1g5nph1vag97fl5t9e80g!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "b23fa236-5a3c-4680-aacb-72f786ffe84d"
+  },
+  "1040g2sg31l2mrlqg2p205nph1vag97flo0kfsqo!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2p205nph1vag97flo0kfsqo!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 479,
+    "success": true,
+    "data": {
+      "text": "RAG已死?\nZep\n是如何解决AI\nMemory的?",
+      "confidence": {
+        "avg_confidence": 0.9823106676340103
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\689ab6a500000000230307a9\\1040g2sg31l2mrlqg2p205nph1vag97flo0kfsqo!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "a1c270df-7dfa-4de3-b863-fd7f6d9ce5ce"
+  },
+  "1040g3k031ledqb3c5o005ohf2g8ocft9eets0o0!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o005ohf2g8ocft9eets0o0!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 347,
+    "success": true,
+    "data": {
+      "text": "实操建议：\n面对任何人\n都不紧张\n的秘诀！",
+      "confidence": {
+        "avg_confidence": 0.9656126499176025
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o005ohf2g8ocft9eets0o0!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "017c55d0-2b49-4f37-bb20-839e9d9c24e3"
+  },
+  "1040g3k031ledqb3c5o0g5ohf2g8ocft9qm56a38!nd_dft_wlteh_webp_3.png": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o0g5ohf2g8ocft9qm56a38!nd_dft_wlteh_webp_3.png",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 564,
+    "success": true,
+    "data": {
+      "text": "一、为什么你会紧张？\n我们来拆解一下紧张的心理机制。\n心理学上有个词叫“过度自我关注”。\n当你面对某个人时，你的注意力并没有放在“事\n情”上，而是放在了“我表现得好不好”。\n比如说话之前，你脑子里先闪过的是，万一说错话怎么办？\n甚至连手怎么放都要纠结半天。\n你根本不是在跟人沟通，而是在跟自己内心的小剧\n场纠缠。\n这就是紧张的本质，叫做“注意力错位”。\n那为什么偏偏在“面对某些人”时更容易紧张？\n原因只有一个，那就是你给了对方过高的权重。\n你心里暗暗把对方抬高成“比我重要的人”或者\n“能决定我命运的人”。\n于是你下意识地把自己放低，让自己陷入“被审\n判”“被评估”的角色里。\n@成长路上不迷路",
+      "confidence": {
+        "avg_confidence": 0.9928881666239571
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o0g5ohf2g8ocft9qm56a38!nd_dft_wlteh_webp_3.png"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "13336572-8cde-4dd5-9bbb-08b1e03036e7"
+  },
+  "1040g3k031ledqb3c5o0g5ohf2g8ocft9qm56a38!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o0g5ohf2g8ocft9qm56a38!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 609,
+    "success": true,
+    "data": {
+      "text": "一、为什么你会紧张？\n我们来拆解一下紧张的心理机制。\n心理学上有个词叫“过度自我关注”。\n当你面对某个人时，你的注意力并没有放在“事\n情”上，而是放在了“我表现得好不好”。\n比如说话之前，你脑子里先闪过的是，万一说错话怎么办？\n甚至连手怎么放都要纠结半天。\n你根本不是在跟人沟通，而是在跟自己内心的小剧\n场纠缠。\n这就是紧张的本质，叫做“注意力错位”。\n那为什么偏偏在“面对某些人”时更容易紧张？\n原因只有一个，那就是你给了对方过高的权重。\n你心里暗暗把对方抬高成“比我重要的人”或者\n“能决定我命运的人”。\n于是你下意识地把自己放低，让自己陷入“被审\n判”“被评估”的角色里。\n@成长路上不迷路",
+      "confidence": {
+        "avg_confidence": 0.9928881666239571
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o0g5ohf2g8ocft9qm56a38!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "bc9ce59c-cf59-4f2c-8281-8e55485a08b4"
+  },
+  "1040g3k031ledqb3c5o105ohf2g8ocft97sb3oo0!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o105ohf2g8ocft97sb3oo0!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 563,
+    "success": true,
+    "data": {
+      "text": "秘诀只有一个：把对方从高位上请下来，把自己从\n低位上拉上来。\n这不是嘴上喊口号说“我要自信”，而是要在心理\n上真正“换掉座位”。\n举个例子：\n你去见领导，如果你心里想的是：“他是我的上\n同，他能决定我的未来。”\n这会让你天然处于下风。\n但如果你换成以下这种理解：\n“我跟领导是合作关系，他需要我解决问题，我也\n需要他提供资源。”\n这时候你不是一个“被审核的下属”，而是一个\n“平等的合作者”。\n@成长路上不迷路",
+      "confidence": {
+        "avg_confidence": 0.9902163829122271
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o105ohf2g8ocft97sb3oo0!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "fd349ea5-cf1c-46de-b046-21a7add8c34b"
+  },
+  "1040g3k031ledqb3c5o1g5ohf2g8ocft9bv441kg!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o1g5ohf2g8ocft9bv441kg!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 517,
+    "success": true,
+    "data": {
+      "text": "心理学里有个实验：\n当一个人被要求去和陌生人讲话时，如果指导者提\n前说明，对方也是第一次来，对方也和你一样紧\n张，那么双方的焦虑水平立刻下降了一大半。\n为什么呢？\n因为“心理地位”被重新拉平了。\n所以，不紧张的秘诀，不是让自己“强行勇敢”，\n而是在心里重新摆放你和对方的位置。\n那具体要怎么做呢？\n@成长路上不迷路",
+      "confidence": {
+        "avg_confidence": 0.9924674510955811
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o1g5ohf2g8ocft9bv441kg!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "d8ef6fb7-434b-442e-bed1-644119a888b9"
+  },
+  "1040g3k031ledqb3c5o205ohf2g8ocft9qp2ivng!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o205ohf2g8ocft9qp2ivng!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 584,
+    "success": true,
+    "data": {
+      "text": "三、具体怎么做\n光有认知还不够，你需要具体的操作方法。\n以下是给你的实操三步法：\n1.拉低高位\n在见任何人之前，先做一个心理预演：\n把对方想象成一个普通人。\n想象他也会刷短视频、会堵车路怒、会深夜点外\n卖。\n给他一些“日常化”的画面，让他从“高高在上”\n变成“和我一样会掉头发的普通人”。\n这里有一个高级认知请你记住，这个世界就是一个\n草台班子。\n当你接受这个认知，你会发现，那个让你心跳加速\n的人，突然没那么可怕了。\n@成长路上不迷路",
+      "confidence": {
+        "avg_confidence": 0.986684795220693
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o205ohf2g8ocft9qp2ivng!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "c863f4d0-6367-4def-9fd7-0ba5fd964975"
+  },
+  "1040g3k031ledqb3c5o2g5ohf2g8ocft93ib1akg!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o2g5ohf2g8ocft93ib1akg!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 579,
+    "success": true,
+    "data": {
+      "text": "二、具体怎么做\n2.抬高自己\n你要给自己一个“正当的身份”。\n问自己一句：“在这段对话里，我能贡献什么价\n值？”\n比如面试时，你不是在求工作，而是在确认你能不\n能帮他解决问题。\n汇报时，你不是在接受批判，而是在分享你掌握的\n项目信息。\n甚至和陌生人聊天时，你也可以这么想，对于对方\n来说，你也是陌生人。\n当你找到自己的“价值点”，你就有了合理存在的\n理由。\n有了这个理由，你自然不会卑微。\n@成长路上不迷路",
+      "confidence": {
+        "avg_confidence": 0.9933130264282226
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o2g5ohf2g8ocft93ib1akg!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "f665b589-8d48-42d6-8c03-4d99e9464ab4"
+  },
+  "1040g3k031ledqb3c5o305ohf2g8ocft9vtpmrc8!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o305ohf2g8ocft9vtpmrc8!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 606,
+    "success": true,
+    "data": {
+      "text": "三、具体怎么做\n3.锁定注意力\n你紧张的根本原因，是注意力放在“我够不够好”\n上。\n要解决它，就必须把注意力锁定在“事情”上。\n最简单的办法，就是把自己变成提问者。\n当你紧张时，试着抛一个问题给对方。\n比如面试时你可以问：您最看重候选人哪方面的能\n力？\n汇报时你可以问：如果您是客户，您会最在意哪个环\n节？\n陌生社交时你可以问：你平时最解压的方式是什\n么？”\n问题一抛出去，你就变成了一个主位，对方也会进入\n“思考和回答”的模式，而你就顺理成章地获得了呼\n吸的时间。\n此时注意力也自然从“自己”转向了“对方”。\n@成长路上不迷路",
+      "confidence": {
+        "avg_confidence": 0.9859574072890811
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a6a594000000001b03514e\\1040g3k031ledqb3c5o305ohf2g8ocft9vtpmrc8!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "dcfc0cc7-49d6-4c16-a8e7-db5a60e205e0"
+  },
+  "1040g0k031lg0j0s1ks005pcdo108gtksmcse6o8!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a844e5000000001c00f895\\1040g0k031lg0j0s1ks005pcdo108gtksmcse6o8!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 490,
+    "success": true,
+    "data": {
+      "text": "皮\n肤\n2\no0u\n感\n质",
+      "confidence": {
+        "avg_confidence": 0.732483142366012
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a844e5000000001c00f895\\1040g0k031lg0j0s1ks005pcdo108gtksmcse6o8!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "f4eb18d7-9b23-4170-a3c0-bec905a0838e"
+  },
+  "1040g0k031lhhlros4q005oaeia10k6737eqsmhg!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q005oaeia10k6737eqsmhg!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 411,
+    "success": true,
+    "data": {
+      "text": "**核心信念*：我注定会失去所有爱我的人，最\n终我会独自一人。\n**童年起源**：父母早逝、离异、长期不稳定或\n情绪反复无常。\n**投降**：紧抓伴侣不放，过度依赖。\n**应对风格**\n**逃避**：拒绝亲密关系以防被抛弃。\n**过度补偿**：先发制人地抛弃对方。\n**案例**：一旦伴侣没有立即回消息，就疯狂打\n电话，确信对方要离开自己，情绪极度崩溃。\n**核心信念*：我确信别人会伤害我、利用我、\n欺骗我或羞辱我。\n**童年起源**：遭受过身体、情感或性虐待；被\n重要他人长期欺骗或苛刻对待。\n**投降**：在关系中忍受虐待，认为这是正常\n的。\n**逃避**：不信任任何人，与他人保持情感距\n**应对风格**\n离。\n*过度补偿**：先去伤害或利用别人（\"先下手为\n强”）。\n**案例**：无法相信伴侣的善意，总认为对方另\n有所图，经常毫无根据地指责伴侣不忠。",
+      "confidence": {
+        "avg_confidence": 0.9674599378005319
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q005oaeia10k6737eqsmhg!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "68251ec9-d88f-423e-9477-f2a32395a2c4"
+  },
+  "1040g0k031lhhlros4q0g5oaeia10k6732gqo580!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q0g5oaeia10k6732gqo580!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 418,
+    "success": true,
+    "data": {
+      "text": "的满足。\n**童年起源*：父母冷漠、缺乏关爱、理解、情\n感交流或呵护。\n*投降*：选择情感冷漠的伴侣，重复童年模\n式。\n夺\n**应对风格**\n逃避*：自我封闭，告诉自己“我不需要爱”。\n过度补偿**：过度索求关注和爱，显得粘人或\n要求过多。\n*案例**：感到孤独和空虚，即使伴侣在身边也\n觉得“得不到爱”，但无法具体说出自己需要什\n么。\n**核心信念**：我天生有缺陷、不配被爱、低人\n一等。\n**童年起源**：被家人批评、羞辱、贬低；感觉\n自己不被接纳。\n*投降**：在关系中讨好他人，隐藏“真实的自\n己”。\n**逃避**：回避亲密关系，害怕别人发现自己的\n**应对风格**\n“缺陷”。\n**过度补偿**：完美主义、吹嘘自大以掩盖内心\n的自卑。\n案例**：有人夸奖时，认为对方只是出于客气\n或别有用心，内心深信自己一无是处。",
+      "confidence": {
+        "avg_confidence": 0.9595471964432642
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q0g5oaeia10k6732gqo580!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "929d0d0f-3c91-4161-bb32-fd74a9d37774"
+  },
+  "1040g0k031lhhlros4q105oaeia10k673d0abrf8!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q105oaeia10k673d0abrf8!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 385,
+    "success": true,
+    "data": {
+      "text": "群体。\n童年起源*：因种族、家境、兴趣等感到与家\n庭或同龄人格格不入。\n**投降**：独自一人，接受孤独的命运。\n孤立/异化\n**应对风格**\n逃避**：回避社交场合。\n过度补偿**：强迫自己融入但不感真实，或加\n入极端团体寻求归属。\n案例**：在聚会中感到极度不自在，认为其他\n人都是一个圈子的，自己无法融入也无法享受其\n中。\n**核心信念**：我没有能力独自应对生活。\n**童年起源**：父母过度保护或溺爱，未能培养\n孩子的独立能力。\n**投降**：极度依赖伴侣或父母做决定。\n*逃避**：逃避需要独立承担责任的任务（如换\n**应对风格**\n工作）。\n**过度补偿**：假装独立，但内心充满焦虑和恐\n慌。\n**案例**：连选择餐厅这样的小事都无法自己做\n主，必须由伴侣决定，否则会感到焦虑和无助。",
+      "confidence": {
+        "avg_confidence": 0.9766603319541268
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q105oaeia10k673d0abrf8!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "8d90e5f8-8dd2-4886-93bd-74efa3ab7be5"
+  },
+  "1040g0k031lhhlros4q1g5oaeia10k673eupq1vg!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q1g5oaeia10k673eupq1vg!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 416,
+    "success": true,
+    "data": {
+      "text": "核心信念：灾难随时会发生，我无法防止也\n无法承受。\n**童年起源**：父母过度焦虑和保护，不断警告\n世界是危险的。\n**投降**：过度谨慎，回避一切可能的风险（如\n旅行、投资）。\n**应对风格*\n**逃避**：回避任何关于疾病或灾难的信息。\n*过度补偿**：鲁莽冒险，以证明自己不害怕\n(较少见)。\n*案例**：身体稍有不适就立刻怀疑是绝症，频\n繁去医院检查；不敢坐飞机，害怕空难。\n*核心信念**：我没有独立的自我，必须依附于\n他人才能生存和获得幸福。\n**童年起源**：与父母（通常是同性别父母）界\n限不清，情感过度纠缠。\n**投降*：与伴侣或父母形成共生关系，没有自\n己的主见和兴趣。\n缠/未发展的自我\n逃避**：难以建立真正的亲密关系，因为那意\n**应对风格**\n味着“失去自我”。\n过度补偿**：过度强调独立，拒绝一切依赖。\n案例*：人生的重大决定（如专业、工作）完\n全听从父母的安排，从未思考过自己真正想要什\n么。",
+      "confidence": {
+        "avg_confidence": 0.9748980609270242
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q1g5oaeia10k673eupq1vg!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "1921baec-c4c4-439b-bd17-4355fe77b0af"
+  },
+  "1040g0k031lhhlros4q205oaeia10k673pk4rmg8!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q205oaeia10k673pk4rmg8!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 384,
+    "success": true,
+    "data": {
+      "text": "核心信念“：我注定会在一切成就上失败。\n**童年起源**：被拿来与更成功的兄弟姐妹比\n较；自己的努力从未得到认可。\n**投降**：接受“失败者\"身份，不愿尝试。\n**应对风格*\n*逃避**：逃避学业或职业上的挑战。\n*过度补偿**：拼命工作以取得成功，但成功后\n仍觉得自己是“骗子”。\n**案例**：尽管客观上成绩不错，但仍觉得自己\n蠢笨，将成功归因于运气，害怕下一次就会失\n败。\n**核心信念**：我比他人优越，不受常规规则约\n束。\n**童年起源**：被过度溺爱和赞赏，从未学会延\n迟满足和共情。\n**投降**：坚持按自己的方式行事，不顾及他\n人。\n**应对风格**\n**逃避**：较少见。\n过度补偿：此陷阱本身就是一种对脆弱或缺\n陷感的过度补偿。\n**案例**：在团队合作中无视规则和他人意见，\n认为自己的想法是最好的，别人都应该配合自",
+      "confidence": {
+        "avg_confidence": 0.9695433196814164
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q205oaeia10k673pk4rmg8!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "f1d34bfd-19b5-40b8-982d-787b78a25fd4"
+  },
+  "1040g0k031lhhlros4q2g5oaeia10k673q25r3n0!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q2g5oaeia10k673q25r3n0!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 309,
+    "success": true,
+    "data": {
+      "text": "**核心信念*：我必须极力努力才能避免批评，\n追求极高标准是必须的。\n童年起源**：有条件式的爱，只有做得好才能\n得到认可。\n投降**：驱使自己追求完美，导致压力、焦虑\n和拖延。\n/吹毛求\n**应对风格**\n逃避：因害怕无法完美而彻底放弃开始。\n*过度补偿**：对他人也吹毛求疵。\n案例**：工作项目必须做到120分，即使牺牲健\n康、娱乐和人际关系也在所不惜，否则就感到自\nI\n己毫无价值。",
+      "confidence": {
+        "avg_confidence": 0.9323124481098992
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q2g5oaeia10k673q25r3n0!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "38724aa6-3446-4e5c-afbf-cefd814bf91e"
+  },
+  "1040g0k031lhhlros4q305oaeia10k673ertlq48!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q305oaeia10k673ertlq48!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 418,
+    "success": true,
+    "data": {
+      "text": "*理解起源**：将当前问题与童年经历联系起\n来。\n1.**识别与评估**\n*确认模式**：识别哪些图式在影响你的生活。\n**挑战证据**：收集证据反驳图式信念。\n2.**认知重构**\n如何修补性格陷阱(治疗过程）\n**成本效益分析**：分析维持图式行为的利。\n早期适应不良图式\n定义：一种始于童年或青春期、贯穿\n意象工作**：在想象中与童年自我对话，满足\n其未竟需求。\n一生的人格模式，包含自我伤害、自\n我挫败的思想、感受与行为。\n3.**体验性策略**\n对话练习**：与心理咨询师或自己进行“健康部\n”与“图式部分”的对话。\n*行为实验**：故意采取与图式指令相反的健康\n行为。\n4.**行为打破**\n**技能培养**：学习缺乏的技能（如决断力、社\n交技能）。\n**有限再抚育**：在治疗关系中，治疗师提供共\n情、理解和挑战，矫正早年的不良体验。\n5.**治疗关系**",
+      "confidence": {
+        "avg_confidence": 0.9652789545059204
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g0k031lhhlros4q305oaeia10k673ertlq48!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "1547ca46-45c2-4386-b05a-06fe76f0faed"
+  },
+  "1040g3k831ljs4naf4u005oi985joc511lsufkvg!nc_n_webp_mw_1.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68a9cd35000000001d01a5dc\\1040g3k831ljs4naf4u005oi985joc511lsufkvg!nc_n_webp_mw_1.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 206,
+    "success": false,
+    "error": "division by zero",
+    "data": [],
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "4beb97a7-4212-4913-819b-cc4084396e18"
+  },
+  "1040g34o31ljc5oi4ku305oiaua1ocu6sveoit8o!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abb5d1000000001d02aa8e\\1040g34o31ljc5oi4ku305oiaua1ocu6sveoit8o!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 386,
+    "success": true,
+    "data": {
+      "text": "ShubhamSaboo\n订阅\n@SabooShubham\nProduct ManagerforClaudeCode.\nIt can turnPRDs into epics,epics intoGitHub issues, and issues into\nproductioncode-withfull traceability ateverystep.\n100%Opensource.\n由 Google 翻译自英语\nClaudeCode的产品经理。\n它可以将PRD转化为史诗，将史诗转化为GitHub问题，将问题转化为生产\n一每一步都具有完全的可追溯性。",
+      "confidence": {
+        "avg_confidence": 0.9758960821411826
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abb5d1000000001d02aa8e\\1040g34o31ljc5oi4ku305oiaua1ocu6sveoit8o!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "ba811619-5231-4ee3-8b00-dc4d488cdf84"
+  },
+  "1040g34o31ljc5oi4ku3g5oiaua1ocu6sfnavi70!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abb5d1000000001d02aa8e\\1040g34o31ljc5oi4ku3g5oiaua1ocu6sfnavi70!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 1299,
+    "success": true,
+    "data": {
+      "text": "ClaudeCodePM\nBy\nautomaze.io\nClaude Code\nGitHub Issues\nLicense MIT\nx\n@aroussi\n★\nStar this repo\nClaudeCodeworkflowto ship faster betterusing spec-drivendevelopment,GitHub issues\nGitworktrees,and mutipleAl agents running in parallel.\nStop losing context.Stop blocking ontasks.Stop shipping bugs.This battle-tested systemturns PRDsintoepics,\nepics intoGitHubissues, andissuesinto production code–withfull traceability at every step.\n7\n0\ngithub.com\ne\nⅢ\nranaroussi / ccpm\nQ Type to search\n>-8\n+\n0\n1\nC\n>Code\nIssues 11\nIPull requests\nActionsProjects①SecurityLInsightsSettings\nEpic: Secrets Example Create Secret Usage Tracker #19\nCCPM\nOpen\nFeature\n0/10\nOpen\nParentEpicStsiletion\nranaroussiopened 20minutes ag\nranaroussi opened 18minutes ago\n…\nAssignees\n©\nNo one-Assign yoursel\nEpic: Secrets Exai\nTask: Create Secret Usage Tracker\nLabels\n@\nOverview\nDescription\ntask\nType\n*\nImplement automatic generation a\nImplementSecretsExampleenertorocreatetheenvformatsecretsexamplefiewithusagecomments.\nRuntime formation. This provides\nThiscomponent transforms the trackedusage dataintoa developer-friendlyexamplefile.\nNo type\nsharing or deploying formations.\nAcceptance Criteria\nProjects\n今\nTechnical Scope\nEngineering\nTrack secret key→set of usage paths mapping\nCore Components\n;\nStatus\nBacklog\nSupport adding new usage: track_usage(secret_key.context_path)\n.\n1.SecretUsageTracker-Track\nGetsorted usage map: get_usage_map(）returns Dict[str,List[str]]\n.\nMilestone\n2.ConfigSecretScanner-Scan\nClear tracking with timestamp:clear()method\n3.SecretsExampleGenerator-1\n…\nNo milestone\n4.Formation Integration-Hook\nThread-safe operations for concurrent access\n.\nUnit tests with 100% coverage\nRelationships\n…\nIntegration Points\nParent issue\nTechnical Details\nFormation initialization（sr/\nEpic: Secrets Example\n0/10\nFile Generation\nDynamic agent management (\nUse collections.detaultdictfor efficent mpping\nranaroussjepm18\n Dynamic MCP server manager\nConfiguration hot-reload syste\ntmplement thread safety with threading.RLock\nStorescan timestamp for trackingwhendatawascollected\nDevelopment\n☆\nSecrets manager module (sre\nConvert to sorted listswhenreturning via get_usage_map()\nCode with agent mode\nImplementation Tasks\nDependencies\nreate a branch for thisissue orink a pull\nrequest\nTask 1: Create Secret Usage\nNone-this isa fo\nNotifications",
+      "confidence": {
+        "avg_confidence": 0.8301422247612799
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abb5d1000000001d02aa8e\\1040g34o31ljc5oi4ku3g5oiaua1ocu6sfnavi70!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "f7b8a51a-2f56-4a39-bbf9-79cc2305b720"
+  },
+  "1040g34o31ljc5oi4ku405oiaua1ocu6sras5h40!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abb5d1000000001d02aa8e\\1040g34o31ljc5oi4ku405oiaua1ocu6sras5h40!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 1127,
+    "success": true,
+    "data": {
+      "text": "克勞德程式碼PM\n由automaze.io\n+克劳德·科德\n+GitHub問题\n許可證MIT\nX\n@阿鲁西\n★標記此倉庫\n克勞德·科德的工作流程旨在通過基於規範的軟體開發、GitHub Isues、Git工作樹以及\n並行運行的多個AI代理，實現更快、更好的交付。\n別再丟失上下文了。別再在任務上卡住了。別再發佈有缺陷的代碼了。這個久經考驗的系統能夠將產品需求文檔轉化為\n史詩級項目，將史詩級項目轉化爲GitHub問題，再將這些問題轉化為生產代碼—一且每一步都有完整的可追溯性。\ngithub.com\n拉纳鲁西/ccpm8\n輸入/以進行搜索\n>\n1\n>代碼\n問题11n 拉取求\n行動\n项目\n安全\n見解\n设定\nEpic： 祕密示例創建祕密使用跟蹤器 #19\nCCPM\n打開\n特微\n0 / 10\n打開\n家長：Epic：秘密示例文件生成\n拉纳鲁西在20分鐘前開業了\n拉纳鲁西在18分鐘前開業了。\n被指派者\n無人自定角色\nEpic: Secrets Exa\n任務：創建祕密使用跟蹤器\n标\n任務\n概述\n描述\n類型\n實現自動生成運行時結構。這\n實现SecretsExampleGenerator，以创建.env-format形式的secrets.example文件，并包含使用明。該组件将跟的\n提供了共享或部署结构的功能\n使用数據轉化爲對開發者友好的示例文件。\n無類型\n验收標准\n项目\n技術范圍\n工程\n跟密输→使用路徑映射集\n狀熊\n存货\n核心组件\n支持新增用法：track_usage(secret_key，context_path）\n1.SecretUsageTracker-跟\n取分使用情况映射：get_usage_mapO返回Dict【str，List【str]】\n里程碑\n2.ConfigSecretScanner-掃描\n带有時同的清晰跟：clearO方法\n3.秘密示例生成器-1\n無里程碑\n4.形成整合-钩\n综程安全操作，用於併發訪\n具有100%覆蓋率的單元测试\n係\n集成點\n父問題\n技術细節\n·形成初始化(rc/m)\nEpic:秘密示例文件生成\n0 / 10\n·勤態代理管理（\n·使用collections.defaultdict进行高效映射\n拉纳鲁西/CCPM#18\n·動態MCP服務器管理器\n·使用threading.RLock（）實现综程安全。\n配置热重载系统\n展\n存描时载，以追醒数排收集的时\n·秘密管理器模瑰（rc）\n·在通過get_usage_mapO返回時轉化爲已排序的列表\n答用代理模式的代码\n實施任務\n依賴項\n個同题刻建一分支，成者接一個拉取\n求。\n任務1：創建祕密用途\n無，这是其组件\n通知\n計算]用户化",
+      "confidence": {
+        "avg_confidence": 0.8731537960145784
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abb5d1000000001d02aa8e\\1040g34o31ljc5oi4ku405oiaua1ocu6sras5h40!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "0b0fac61-cece-49a6-bf38-4b2a84464e94"
+  },
+  "1040g2sg31ljcuum65oj05pgr2j1hol5i2cpk2og!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abc26e000000001c0116d5\\1040g2sg31ljcuum65oj05pgr2j1hol5i2cpk2og!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 400,
+    "success": true,
+    "data": {
+      "text": "+\n日期和时间\n金额\n货币\n状态\n支付方式\n更多筛选器\n导出\n编辑列\n金额\n支付方式\n描述\n客户\n日期\n退款日期\n拒绝原因\nUS$9.99 USD\n已成功\nVISA\n… 0065\npi_3RyevWBeMohK5VU200vLcCTp\n日上午4:17\n一\nUS$19.99\nUSD\n已成功√\n… 0185\npi_3RtkUgBeMohK5VU20qKp0eXT\n8月8日下午3:13\nUS$39.99\nUSD\n已成功√\n…3184\npi_3RsnsABeMohK5VU208kicrVb\n8月6日上午12:37\n一\nUS$19.99\nUSD\n已成功\n… 2237\npi_3RsnoMBeMohK5VU212VPTbdM\n8月6日上午12:34\nUS$29.99 USD\n已成功\n……6035\npi_3RsfSPBeMohK5VU20NBlxg30\n8月5日下午3:38",
+      "confidence": {
+        "avg_confidence": 0.9503534125520828
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abc26e000000001c0116d5\\1040g2sg31ljcuum65oj05pgr2j1hol5i2cpk2og!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "75cc151f-65c3-4fe4-816b-17a8168ce022"
+  },
+  "1040g2sg31ljcuum65ojg5pgr2j1hol5i9c6tpo0!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abc26e000000001c0116d5\\1040g2sg31ljcuum65ojg5pgr2j1hol5i9c6tpo0!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 542,
+    "success": true,
+    "data": {
+      "text": "小陈喜悦财税\nCARITECHSOLUTIONSLTD您好，您的英国公司要尽快办理第二年维续事项啦~不然公司会出问\n题（会被政府注销）\n~\n\"小陈喜悦财税修改群名为“CARITECHSOLUTIONSLTD服务\n群”\n要处理什么\n“小陈喜悦财税”撤回了一条消息\n“无忧服务～小花撤回了一条消息\n小陈喜悦财税\n给您介绍一下英国公司第二年正常存续需要做的事情~：\n1.CompaniesHouse的年审（Confirm Statement），年审主要是向政府汇报公司的注册资金、股\n东、以及业务代码有没有变更，如果您想更改股东，就是这时候汇报给政府～对于年审服务，我们的\n费用是859元；\n2.HMRC的CorporationTax公司税务申报，向英国税务局报告税务情况，我们帮您零申报的费用是\n599元，送CompaniesHouse的Accounts申报服务；\n3、CompaniesHouse的Accounts申报，向公司注册处报告收入情况，如上第二项所述，如果拍\n了第二项599元的公司税务申报，赠送此项，无需付费。（若单独申报此项，200元）\n4、托管的注册地址续费，英国注册处要求公司要有一个允许使用的注册地址，同时英国注册处和税局\n寄信到注册地址，因此地址需要续费，我们这边的收费是kington地址398元一年，london地址是\n498一年；\n简单来说，维持公司正常存续，不被罚款，大概花1800左右（具体看当年的政府费用和汇率），今\n年kington地址+税务0报的话，就是859+599+398=1856",
+      "confidence": {
+        "avg_confidence": 0.9572704719460529
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abc26e000000001c0116d5\\1040g2sg31ljcuum65ojg5pgr2j1hol5i9c6tpo0!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "17bb3a6a-27b6-4ef1-84aa-c867a6fc6016"
+  },
+  "1040g2sg31ljcuum65okg5pgr2j1hol5ioa1agfo!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abc26e000000001c0116d5\\1040g2sg31ljcuum65okg5pgr2j1hol5ioa1agfo!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 417,
+    "success": true,
+    "data": {
+      "text": "警告！\n!\n独立开发者\n别急着开公司了\n个人收款\n嘎嘎香",
+      "confidence": {
+        "avg_confidence": 0.9702438116073608
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68abc26e000000001c0116d5\\1040g2sg31ljcuum65okg5pgr2j1hol5ioa1agfo!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "2dad88fa-9346-4fdb-8dd7-c924cd9eedff"
+  },
+  "1040g2sg31lk2bb574urg5peookc1ebvpp2mes1g!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68ac6b9f000000001d01202b\\1040g2sg31lk2bb574urg5peookc1ebvpp2mes1g!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 412,
+    "success": true,
+    "data": {
+      "text": "这种\n0.6B\n小模型能干啥？",
+      "confidence": {
+        "avg_confidence": 0.9748782912890116
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68ac6b9f000000001d01202b\\1040g2sg31lk2bb574urg5peookc1ebvpp2mes1g!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "5bbfbfc1-6f08-4206-a6d1-fab3946cc60c"
+  },
+  "1040g34o31ll4qoh7kq105oan3eo0kejdikd93a0!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68ad8f7f000000001c006098\\1040g34o31ll4qoh7kq105oan3eo0kejdikd93a0!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 503,
+    "success": true,
+    "data": {
+      "text": "osuianp\n0\nH1\n超可爱的\n免费抠图网站",
+      "confidence": {
+        "avg_confidence": 0.7099136590957642
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68ad8f7f000000001c006098\\1040g34o31ll4qoh7kq105oan3eo0kejdikd93a0!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "d81efe40-1137-4ab3-a014-46fffacb5616"
+  },
+  "1040g34o31lm3cht8l2105o3vpbng8jeftjk1tp0!nd_dft_wlteh_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68ae8038000000001b03fd81\\1040g34o31lm3cht8l2105o3vpbng8jeftjk1tp0!nd_dft_wlteh_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 412,
+    "success": true,
+    "data": {
+      "text": "教程！\nnano-banana\n城市天际线建筑？\n如何生成",
+      "confidence": {
+        "avg_confidence": 0.9660940319299698
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68ae8038000000001b03fd81\\1040g34o31lm3cht8l2105o3vpbng8jeftjk1tp0!nd_dft_wlteh_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "c5868c24-2bc6-414e-a3b9-df4f5d61ba8b"
+  },
+  "1040g3k031lm893d2l0005nb1ot108r24om6sb00!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68aea966000000001d0014f2\\1040g3k031lm893d2l0005nb1ot108r24om6sb00!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 1813,
+    "success": true,
+    "data": {
+      "text": "open-source reproducible\ncommercial / partially open-source\nW\nG\nW\nM\nW\n72\nK\n26\n40\n48\n学\n40\n64\n35\n41\n35\n24\neL\n1\nW\nE2\nW\neL\n34\n56\n30\n30\nG\n22\n25\n27\n48\n25\n20\n20\n20\n20\n40\nMQ\nM\nManus\nGrok4\nAworld\nMiroFlow\nMiroFlow\nMiroFlow\nMiroFlow\nMiroFlow\nOpenAI DR\nGemini DR\nOpenAI DR\nGemini DR\nOpenAl DR\nOpenAl DR\nPerplexity Al\nPerplexity AI\nWebSailor-72B\nWebSailor-72B\nKimi Researcher\nKimi Researcher\nWebShaper-72B*\nBrowserComp-ZH\nBrowserComp-EN\nxBench-DeepSearch\nGAIA Validation\nHLE\nHLE Text-Only",
+      "confidence": {
+        "avg_confidence": 0.9084135235111782
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68aea966000000001d0014f2\\1040g3k031lm893d2l0005nb1ot108r24om6sb00!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "905305d5-95f0-460b-99dd-2bb9141e8f0f"
+  },
+  "1040g3k031lm893d2l00g5nb1ot108r24cm2h740!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68aea966000000001d0014f2\\1040g3k031lm893d2l00g5nb1ot108r24cm2h740!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 474,
+    "success": true,
+    "data": {
+      "text": "M\n Star History\nMiroMindAI/MiroFlow\nin.m\nAug 24\n.17",
+      "confidence": {
+        "avg_confidence": 0.8192097793022791
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68aea966000000001d0014f2\\1040g3k031lm893d2l00g5nb1ot108r24cm2h740!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "2e6bac41-7564-4533-98f9-a5d4aaddcb31"
+  },
+  "1040g3k031lm893d2l0105nb1ot108r249sgf6kg!nd_dft_wgth_webp_3.webp": {
+    "task_params_extra": {
+      "lang": "ch",
+      "image_path_abs_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68aea966000000001d0014f2\\1040g3k031lm893d2l0105nb1ot108r249sgf6kg!nd_dft_wgth_webp_3.webp",
+      "include_text": true,
+      "need_merge_lines": true,
+      "include_boxes": false,
+      "include_confidence": true,
+      "include_layout": false,
+      "include_table": false,
+      "include_raw_image": true
+    },
+    "exec_elapsed_ms": 1161,
+    "success": true,
+    "data": {
+      "text": "main\n3 Branches 0 Tags\nQ Go to file\nt\nAdd file\n>Code\nAbout\nMiroflow is an agent framework that\nBinWang28 fix(performance-report-mistake):mistake in performance report (#27)\nf304655·now\n27 Commits\nsimplifies the development of complex\nmulti-agent systems. Build, manage, ar\n.github\nrename folder.\n3 weeks ago\nscale your Al agents with ease.\nLICENSES\nInitial commit\n3 weeks ago\nReadme\n1 hour ago\nApache-2.0 license\napps\nfeat(code-update): code improvements\n83 Contributing\ndata\nUpdateREADME and scripts\n3 weeks ago\nActivity\ndocs\nfeat(code-update):code improvements\n1 hour ago\n Custom properties\n☆ 352 stars\nlibs\nfix(uvlock): fix uv lock file to pass pytest (#26)\n1 hour ago\n 6 watching\n口\n.gitattributes\nInitial commit\n3 weeks ago\n28 forks\n.gitignore\n1 hour ago\nReport repository\nfeat(code-update): code improvements\n西\nLICENSE\nInitial commit\n3 weeks ago\nReleases\n7\nREADME.md\nfix(performance-report-mistake): mistake in performance...\nnow\nNo releases published\nCreate a new release\nREUSE.toml\nInitial commit\n3 weeks ago\nPackages\njustfile\nInitial commit\n3 weeks ago\nNo packages published\nPublish your first package\nREADME\n8Contributing\n\nApache-2.0 license\n0\nContributors\n6\nMiroFlow\nLanguages\nMIROTHINKERMODELS\nPython 89.9%\nMIROVERSEDATA\nMIROMINDWEBSITE\nJavaScript 4.7%\nC\nShell 2.6%\nCSS 1.7%\nOther 1.1%\nB\nDISCORD\nWECHAT\nR\nREDNOTE\nDEEPWIKI\nPlease tryourDemo!",
+      "confidence": {
+        "avg_confidence": 0.9180787397969153
+      },
+      "raw_image_path": "D:\\AIProject\\everything-as-an-interface-apps\\xiaohongshu_favorites_collect_and_process_with_ai_web\\data\\images\\68aea966000000001d0014f2\\1040g3k031lm893d2l0105nb1ot108r249sgf6kg!nd_dft_wgth_webp_3.webp"
+    },
+    "plugin_id": "paddle_ocr",
+    "version": "1.0.0",
+    "task_id": "8589a31a-5eb9-41be-8e34-bd2eef3c8576"
+  }
+}

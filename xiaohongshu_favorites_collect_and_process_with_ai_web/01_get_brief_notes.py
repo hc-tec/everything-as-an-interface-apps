@@ -43,11 +43,11 @@ async def main():
                 close_page_when_task_finished=True,
             ),
             service_params=ServiceParams(
-                max_items=10,
-                max_seconds=10 ** 9,
+                max_items=20,
+                max_seconds=20 ** 9,
             ),
             sync_params=SyncParams(
-                max_new_items=10,
+                max_new_items=20,
             )
         )
         if not results["success"]:
